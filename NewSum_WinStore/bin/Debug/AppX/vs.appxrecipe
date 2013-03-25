@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JOOM-LAPTOP</Machine>
+    <WindowsUser>Alx</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>0A99684A906FAE9B249346F4984C98CBC08A65B61BFB892CDB38437718183379</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>85631ca2-4c5f-4149-954d-ba7cf9841971_0.1.0.0_neutral__xqsafypvtnfgy</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>85631ca2-4c5f-4149-954d-ba7cf9841971_xqsafypvtnfgy!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>85631ca2-4c5f-4149-954d-ba7cf9841971</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Alx</RegisteredPackagePublisher>
+    <RegisteredVersion>0.1.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-21T18:00:16.323</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2013-03-20T23:58:19.472</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.css">
+      <PackagePath>pages\items\items.css</PackagePath>
+      <Modified>2013-03-18T18:54:51.116</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.css">
+      <PackagePath>pages\split\split.css</PackagePath>
+      <Modified>2013-03-20T23:36:18.997</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\3499502280_a1a8ce4474_q.jpg">
+      <PackagePath>images\3499502280_a1a8ce4474_q.jpg</PackagePath>
+      <Modified>2013-03-20T23:10:16.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\3591481091_6f63ecfd4e_q.jpg">
+      <PackagePath>images\3591481091_6f63ecfd4e_q.jpg</PackagePath>
+      <Modified>2013-03-20T23:09:20.151</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\basketball_middle.jpg">
+      <PackagePath>images\basketball_middle.jpg</PackagePath>
+      <Modified>2013-03-18T20:35:55.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logoTemp.jpg">
+      <PackagePath>images\logoTemp.jpg</PackagePath>
+      <Modified>2013-03-20T23:19:07.397</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logo_read.jpg">
+      <PackagePath>images\logo_read.jpg</PackagePath>
+      <Modified>2013-03-20T23:31:30.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\Parthenon_night_view.jpg">
+      <PackagePath>images\Parthenon_night_view.jpg</PackagePath>
+      <Modified>2013-03-20T23:09:07.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\Patan_Nepal-Culture_of_Nepal.jpg">
+      <PackagePath>images\Patan_Nepal-Culture_of_Nepal.jpg</PackagePath>
+      <Modified>2013-03-20T23:08:12.117</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\petri-dishes_w725_h498.jpg">
+      <PackagePath>images\petri-dishes_w725_h498.jpg</PackagePath>
+      <Modified>2013-03-20T23:08:08.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\earth.png">
+      <PackagePath>images\earth.png</PackagePath>
+      <Modified>2013-03-20T23:08:02.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-18T18:52:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-18T18:52:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-18T18:52:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-18T18:52:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+      <Modified>2013-03-20T23:35:29.269</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-03-18T22:46:19.452</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2013-03-18T18:54:51.382</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.js">
+      <PackagePath>pages\items\items.js</PackagePath>
+      <Modified>2013-03-18T22:46:20.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.js">
+      <PackagePath>pages\split\split.js</PackagePath>
+      <Modified>2013-03-18T18:54:51.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.html">
+      <PackagePath>pages\items\items.html</PackagePath>
+      <Modified>2013-03-18T20:20:03.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.html">
+      <PackagePath>pages\split\split.html</PackagePath>
+      <Modified>2013-03-20T23:36:18.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-03-20T23:58:19.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-03-20T23:32:31.928</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20512</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20512</FrameworkIdentity>
+      <AppxLocation>C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

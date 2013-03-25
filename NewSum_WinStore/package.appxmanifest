@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="85631ca2-4c5f-4149-954d-ba7cf9841971" Version="0.1.0.0" Publisher="CN=Alx" />
+  <Properties>
+    <DisplayName>NewSum_WinStore</DisplayName>
+    <PublisherDisplayName>Alexandros Tzoumas</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="NewSum" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Το newSum είναι μια εφαρμογή που δημιουργεί περιλήψεις των ειδήσεων από πολλές πηγές σε ένα ενιαίο κείμενο! Πρόκειται για ένα ευφυές κολάζ από όλες τις διαφορετικές πληροφορίες που θα είχατε αν διαβάζατε όλα τα άρθρα, από όλες τις πηγές (αν και όταν θα είχατε το χρόνο!).Το newSum αξιοποιεί κορυφαία τεχνολογία τεχνητής νοημοσύνης  για να κάνει σύνοψη πληροφοριών, ξεχωρίζοντας τα πράγματα που διαφέρουν από τον πλεονασμό. Είναι υλοποιημένο απο την μη κερδοσκοπική οργάνωση http://ww.scify.org, ενώ το γραφικό περιβάλλον για windows 8 έγινε απο τον Αλέξανδρο Τζούμα (@AlxJoom)" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" ShortName="NewSum" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="white" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
