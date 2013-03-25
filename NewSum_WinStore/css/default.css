@@ -17,9 +17,6 @@
         -ms-grid-columns: 120px 1fr;
         -ms-grid-rows: 1fr;
         display: -ms-grid;
-
-
-        /*test comment*/
     }
 
         .fragment header[role=banner] .win-backbutton {
