@@ -1,7 +1,7 @@
 NewSum-Win8
 ===========
 
-A windows 8 client for SciFy's NewSum.  
+A windows 8 client for SciFY's NewSum.  
 
 NewSum is an innovative application that automatically summarizes information from many sources and combines them in a single text.
 It is a intelligent “collage” of all the different information that you would get if you read all the articles from all the sources you visit.
