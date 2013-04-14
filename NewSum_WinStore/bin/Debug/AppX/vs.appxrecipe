@@ -5,7 +5,7 @@
     <WindowsUser>Alx</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>0A99684A906FAE9B249346F4984C98CBC08A65B61BFB892CDB38437718183379</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>293DAD945EB7A45E0079DC006412CD8B470B685BCD508DB2905FF6A1C7902363</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>85631ca2-4c5f-4149-954d-ba7cf9841971_0.1.0.0_neutral__xqsafypvtnfgy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>85631ca2-4c5f-4149-954d-ba7cf9841971_xqsafypvtnfgy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>85631ca2-4c5f-4149-954d-ba7cf9841971</RegisteredPackageID>
@@ -16,13 +16,13 @@
     <AppXManifest Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-21T18:00:16.323</Modified>
+      <Modified>2013-04-14T12:51:35.778</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-03-20T23:58:19.472</Modified>
+      <Modified>2013-03-25T16:18:51.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.css">
       <PackagePath>pages\items\items.css</PackagePath>
@@ -128,9 +128,9 @@
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
       <Name>Microsoft.WinJS.1.0</Name>
-      <Version>1.0.9200.20512</Version>
+      <Version>1.0.9200.20602</Version>
       <Architecture>Neutral</Architecture>
-      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20512</FrameworkIdentity>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
       <AppxLocation>C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
     </ResolvedSDKReference>
   </ItemGroup>

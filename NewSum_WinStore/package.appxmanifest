@@ -4,7 +4,7 @@
   <Properties>
     <DisplayName>NewSum_WinStore</DisplayName>
     <PublisherDisplayName>Alexandros Tzoumas</PublisherDisplayName>
-    <Logo>images\storelogo.png</Logo>
+    <Logo>images\logos\store\50.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
@@ -15,9 +15,15 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="NewSum" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Το newSum είναι μια εφαρμογή που δημιουργεί περιλήψεις των ειδήσεων από πολλές πηγές σε ένα ενιαίο κείμενο! Πρόκειται για ένα ευφυές κολάζ από όλες τις διαφορετικές πληροφορίες που θα είχατε αν διαβάζατε όλα τα άρθρα, από όλες τις πηγές (αν και όταν θα είχατε το χρόνο!).Το newSum αξιοποιεί κορυφαία τεχνολογία τεχνητής νοημοσύνης  για να κάνει σύνοψη πληροφοριών, ξεχωρίζοντας τα πράγματα που διαφέρουν από τον πλεονασμό. Είναι υλοποιημένο απο την μη κερδοσκοπική οργάνωση http://ww.scify.org, ενώ το γραφικό περιβάλλον για windows 8 έγινε απο τον Αλέξανδρο Τζούμα (@AlxJoom)" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" ShortName="NewSum" />
-        <SplashScreen Image="images\splashscreen.png" BackgroundColor="white" />
+      <VisualElements DisplayName="NewSum" Logo="images\logos\logo\150.fw.png" SmallLogo="images\logos\small\30.png" Description="Το newSum είναι μια εφαρμογή που δημιουργεί περιλήψεις των ειδήσεων από πολλές πηγές σε ένα ενιαίο κείμενο! Πρόκειται για ένα ευφυές κολάζ από όλες τις διαφορετικές πληροφορίες που θα είχατε αν διαβάζατε όλα τα άρθρα, από όλες τις πηγές (αν και όταν θα είχατε το χρόνο!).Το newSum αξιοποιεί κορυφαία τεχνολογία τεχνητής νοημοσύνης  για να κάνει σύνοψη πληροφοριών, ξεχωρίζοντας τα πράγματα που διαφέρουν από τον πλεονασμό. Είναι υλοποιημένο απο την μη κερδοσκοπική οργάνωση http://ww.scify.org, ενώ το γραφικό περιβάλλον για windows 8 έγινε απο τον Αλέξανδρο Τζούμα (@AlxJoom)" ForegroundText="dark" BackgroundColor="#ffffff">
+        <DefaultTile ShowName="allLogos" ShortName="NewSum" WideLogo="images\logos\wide\310x150.png" />
+        <SplashScreen Image="images\logos\splashscreen\620x300.png" BackgroundColor="white" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
       </VisualElements>
     </Application>
   </Applications>
