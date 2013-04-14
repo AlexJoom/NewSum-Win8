@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://NewSumFreeService.Server.NewSumServer.scify.org/" targetNamespace="http://NewSumFreeService.Server.NewSumServer.scify.org/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getCategories" type="tns:getCategories" />
+  <xs:element name="getCategoriesResponse" type="tns:getCategoriesResponse" />
+  <xs:element name="getCategorySources" type="tns:getCategorySources" />
+  <xs:element name="getCategorySourcesResponse" type="tns:getCategorySourcesResponse" />
+  <xs:element name="getLinkLabels" type="tns:getLinkLabels" />
+  <xs:element name="getLinkLabelsResponse" type="tns:getLinkLabelsResponse" />
+  <xs:element name="getSentenceSeparator" type="tns:getSentenceSeparator" />
+  <xs:element name="getSentenceSeparatorResponse" type="tns:getSentenceSeparatorResponse" />
+  <xs:element name="getSeparator" type="tns:getSeparator" />
+  <xs:element name="getSeparatorResponse" type="tns:getSeparatorResponse" />
+  <xs:element name="getSummary" type="tns:getSummary" />
+  <xs:element name="getSummaryResponse" type="tns:getSummaryResponse" />
+  <xs:element name="getTopicIDs" type="tns:getTopicIDs" />
+  <xs:element name="getTopicIDsByKeyword" type="tns:getTopicIDsByKeyword" />
+  <xs:element name="getTopicIDsByKeywordResponse" type="tns:getTopicIDsByKeywordResponse" />
+  <xs:element name="getTopicIDsResponse" type="tns:getTopicIDsResponse" />
+  <xs:element name="getTopicTitles" type="tns:getTopicTitles" />
+  <xs:element name="getTopicTitlesByID" type="tns:getTopicTitlesByID" />
+  <xs:element name="getTopicTitlesByIDResponse" type="tns:getTopicTitlesByIDResponse" />
+  <xs:element name="getTopicTitlesByIDs" type="tns:getTopicTitlesByIDs" />
+  <xs:element name="getTopicTitlesByIDsResponse" type="tns:getTopicTitlesByIDsResponse" />
+  <xs:element name="getTopicTitlesResponse" type="tns:getTopicTitlesResponse" />
+  <xs:complexType name="getTopicIDs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sUserSources" type="xs:string" />
+      <xs:element minOccurs="0" name="sCategory" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicIDsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicTitles">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sUserSources" type="xs:string" />
+      <xs:element minOccurs="0" name="sCategory" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicTitlesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sTopicID" type="xs:string" />
+      <xs:element minOccurs="0" name="sUserSources" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSummaryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicTitlesByID">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sTopicID" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicTitlesByIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLinkLabels">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLinkLabelsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCategorySources">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sCategory" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCategorySourcesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCategories">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sUserSources" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCategoriesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicIDsByKeyword">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sKeyword" type="xs:string" />
+      <xs:element minOccurs="0" name="sUserSources" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicIDsByKeywordResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSentenceSeparator">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getSentenceSeparatorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicTitlesByIDs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sTopicIDs" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTopicTitlesByIDsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSeparator">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getSeparatorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

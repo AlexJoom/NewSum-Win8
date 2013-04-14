@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://NewSumFreeService.Server.NewSumServer.scify.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="NewSumFreeService" targetNamespace="http://NewSumFreeService.Server.NewSumServer.scify.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://143.233.226.97:28080/NewSumFreeService/NewSumFreeService?xsd=1" namespace="http://NewSumFreeService.Server.NewSumServer.scify.org/" />
+    </xsd:schema>
+  </types>
+  <message name="getSeparator">
+    <part name="parameters" element="tns:getSeparator" />
+  </message>
+  <message name="getSeparatorResponse">
+    <part name="parameters" element="tns:getSeparatorResponse" />
+  </message>
+  <message name="getCategories">
+    <part name="parameters" element="tns:getCategories" />
+  </message>
+  <message name="getCategoriesResponse">
+    <part name="parameters" element="tns:getCategoriesResponse" />
+  </message>
+  <message name="getSentenceSeparator">
+    <part name="parameters" element="tns:getSentenceSeparator" />
+  </message>
+  <message name="getSentenceSeparatorResponse">
+    <part name="parameters" element="tns:getSentenceSeparatorResponse" />
+  </message>
+  <message name="getCategorySources">
+    <part name="parameters" element="tns:getCategorySources" />
+  </message>
+  <message name="getCategorySourcesResponse">
+    <part name="parameters" element="tns:getCategorySourcesResponse" />
+  </message>
+  <message name="getTopicTitles">
+    <part name="parameters" element="tns:getTopicTitles" />
+  </message>
+  <message name="getTopicTitlesResponse">
+    <part name="parameters" element="tns:getTopicTitlesResponse" />
+  </message>
+  <message name="getSummary">
+    <part name="parameters" element="tns:getSummary" />
+  </message>
+  <message name="getSummaryResponse">
+    <part name="parameters" element="tns:getSummaryResponse" />
+  </message>
+  <message name="getTopicTitlesByIDs">
+    <part name="parameters" element="tns:getTopicTitlesByIDs" />
+  </message>
+  <message name="getTopicTitlesByIDsResponse">
+    <part name="parameters" element="tns:getTopicTitlesByIDsResponse" />
+  </message>
+  <message name="getTopicTitlesByID">
+    <part name="parameters" element="tns:getTopicTitlesByID" />
+  </message>
+  <message name="getTopicTitlesByIDResponse">
+    <part name="parameters" element="tns:getTopicTitlesByIDResponse" />
+  </message>
+  <message name="getTopicIDs">
+    <part name="parameters" element="tns:getTopicIDs" />
+  </message>
+  <message name="getTopicIDsResponse">
+    <part name="parameters" element="tns:getTopicIDsResponse" />
+  </message>
+  <message name="getTopicIDsByKeyword">
+    <part name="parameters" element="tns:getTopicIDsByKeyword" />
+  </message>
+  <message name="getTopicIDsByKeywordResponse">
+    <part name="parameters" element="tns:getTopicIDsByKeywordResponse" />
+  </message>
+  <message name="getLinkLabels">
+    <part name="parameters" element="tns:getLinkLabels" />
+  </message>
+  <message name="getLinkLabelsResponse">
+    <part name="parameters" element="tns:getLinkLabelsResponse" />
+  </message>
+  <portType name="NewSumFreeService">
+    <operation name="getSeparator">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getSeparatorRequest" message="tns:getSeparator" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getSeparatorResponse" message="tns:getSeparatorResponse" />
+    </operation>
+    <operation name="getCategories">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getCategoriesRequest" message="tns:getCategories" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getCategoriesResponse" message="tns:getCategoriesResponse" />
+    </operation>
+    <operation name="getSentenceSeparator">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getSentenceSeparatorRequest" message="tns:getSentenceSeparator" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getSentenceSeparatorResponse" message="tns:getSentenceSeparatorResponse" />
+    </operation>
+    <operation name="getCategorySources">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getCategorySourcesRequest" message="tns:getCategorySources" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getCategorySourcesResponse" message="tns:getCategorySourcesResponse" />
+    </operation>
+    <operation name="getTopicTitles">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicTitlesRequest" message="tns:getTopicTitles" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicTitlesResponse" message="tns:getTopicTitlesResponse" />
+    </operation>
+    <operation name="getSummary">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getSummaryRequest" message="tns:getSummary" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getSummaryResponse" message="tns:getSummaryResponse" />
+    </operation>
+    <operation name="getTopicTitlesByIDs">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicTitlesByIDsRequest" message="tns:getTopicTitlesByIDs" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicTitlesByIDsResponse" message="tns:getTopicTitlesByIDsResponse" />
+    </operation>
+    <operation name="getTopicTitlesByID">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicTitlesByIDRequest" message="tns:getTopicTitlesByID" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicTitlesByIDResponse" message="tns:getTopicTitlesByIDResponse" />
+    </operation>
+    <operation name="getTopicIDs">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicIDsRequest" message="tns:getTopicIDs" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicIDsResponse" message="tns:getTopicIDsResponse" />
+    </operation>
+    <operation name="getTopicIDsByKeyword">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicIDsByKeywordRequest" message="tns:getTopicIDsByKeyword" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getTopicIDsByKeywordResponse" message="tns:getTopicIDsByKeywordResponse" />
+    </operation>
+    <operation name="getLinkLabels">
+      <input wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getLinkLabelsRequest" message="tns:getLinkLabels" />
+      <output wsam:Action="http://NewSumFreeService.Server.NewSumServer.scify.org/NewSumFreeService/getLinkLabelsResponse" message="tns:getLinkLabelsResponse" />
+    </operation>
+  </portType>
+  <binding name="NewSumFreeServicePortBinding" type="tns:NewSumFreeService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getSeparator">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getCategories">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSentenceSeparator">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getCategorySources">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTopicTitles">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSummary">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTopicTitlesByIDs">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTopicTitlesByID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTopicIDs">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTopicIDsByKeyword">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLinkLabels">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="NewSumFreeService">
+    <port name="NewSumFreeServicePort" binding="tns:NewSumFreeServicePortBinding">
+      <soap:address location="http://143.233.226.97:28080/NewSumFreeService/NewSumFreeService" />
+    </port>
+  </service>
+</definitions>

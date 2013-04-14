@@ -1,6 +1,8 @@
 ﻿(function () {
     "use strict";
 
+    WinJS.Namespace.define("NewSum");
+
     var list = new WinJS.Binding.List();
     var groupedItems = list.createGrouped(
         function groupKeySelector(item) { return item.group.key; },
@@ -58,16 +60,16 @@
     // data list. 
     function generateSampleData() {
         var itemContent = "<p>Περισσότερη ευελιξία ως προς το τέλος φορολόγησης των καταθέσεων στην Κύπρο ζήτησαν, σύμφωνα με πληροφορίες, οι περισσότεροι υπουργοί Οικονομικών της ευρωζώνης στην τηλεδιάσκεψη του Eurogroup." +
-            "Συγκεκριμένα, όπως αναφέρουν ασφαλείς πηγές, ζήτησαν τη διαφύλαξη των καταθέσεων έως 100.000 ευρώ, και αντίστοιχα την αναπροσαρμογή του σχετικού συντελεστή επί του τέλους στις καταθέσεις υπεράνω του ποσού αυτού, προκειμένου να συγκεντρωθεί το πόσο που έχει αρχικώς αποφασιστεί κατά την τελευταία συνεδρίασή του συμβουλίου υπουργών Οικονομικών στις Βρυξέλλες."+
+            "Συγκεκριμένα, όπως αναφέρουν ασφαλείς πηγές, ζήτησαν τη διαφύλαξη των καταθέσεων έως 100.000 ευρώ, και αντίστοιχα την αναπροσαρμογή του σχετικού συντελεστή επί του τέλους στις καταθέσεις υπεράνω του ποσού αυτού, προκειμένου να συγκεντρωθεί το πόσο που έχει αρχικώς αποφασιστεί κατά την τελευταία συνεδρίασή του συμβουλίου υπουργών Οικονομικών στις Βρυξέλλες." +
             "Η εξέλιξη αυτή έρχεται ως συνέχεια του τσουνάμι των αντιδράσεων στην απόφαση για κούρεμα των καταθέσεων στην Κύπρο.</p>";
         var itemDescription = "Περισσότερη ευελιξία ως προς το τέλος φορολόγησης των καταθέσεων στην Κύπρο ζήτησαν, σύμφωνα με πληροφορίες, οι περισσότεροι υπουργοί...";
         var groupDescription = "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante";
 
         // These three strings encode placeholder images. You will want to set the
         // backgroundImage property in your real data to be URLs to images.
-        var darkGray = "../../images/logo_read.jpg"; //"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY3B0cPoPAANMAcOba1BlAAAAAElFTkSuQmCC";
-        var lightGray = "../../images/logoTemp.jpg";// "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY7h4+cp/AAhpA3h+ANDKAAAAAElFTkSuQmCC";
-        var mediumGray = "../../images/logoTemp.jpg"; //"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY5g8dcZ/AAY/AsAlWFQ+AAAAAElFTkSuQmCC";
+        var darkGray = "../../images/logo_read.jpg";
+        var lightGray = "../../images/logoTemp.jpg";
+        var mediumGray = "../../images/logoTemp.jpg";
 
         var greece = "../../images/Parthenon_night_view.jpg";
         var athletics = "../../images/basketball_middle.jpg";
@@ -132,3 +134,21 @@
         return sampleItems;
     }
 })();
+
+
+
+NewSum.dataServices = function () {
+};
+NewSum.dataServices.prototype = function () {
+    var Init = function () {
+
+        NewSum_WinStore_ServiceProxy.ServiceProxy.getCategories("All").done(function (data) {
+
+            var x = "TEst";
+
+        });
+    }
+    return {
+        Init: Init
+    }
+}();
