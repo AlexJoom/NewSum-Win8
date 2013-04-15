@@ -16,17 +16,17 @@
     <AppXManifest Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T21:14:09.838</Modified>
+      <Modified>2013-04-15T22:02:55.621</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore_ServiceProxy\bin\Debug\NewSum_WinStore_ServiceProxy.winmd">
       <PackagePath>NewSum_WinStore_ServiceProxy.winmd</PackagePath>
-      <Modified>2013-04-14T21:14:05.785</Modified>
+      <Modified>2013-04-15T22:02:55.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore_ServiceProxy\bin\Debug\NewSum_WinStore_ServiceProxy.pdb">
       <PackagePath>NewSum_WinStore_ServiceProxy.pdb</PackagePath>
-      <Modified>2013-04-14T21:14:05.750</Modified>
+      <Modified>2013-04-15T22:02:54.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\css\default.css">
       <PackagePath>css\default.css</PackagePath>
@@ -75,14 +75,6 @@
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\earth.png">
       <PackagePath>images\earth.png</PackagePath>
       <Modified>2013-03-20T23:08:02.757</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logo.png">
-      <PackagePath>images\logo.png</PackagePath>
-      <Modified>2012-09-18T18:52:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logo.scale-100.png">
-      <PackagePath>images\logo.scale-100.png</PackagePath>
-      <Modified>2013-04-14T15:38:05.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\badge\24.scale-100.png">
       <PackagePath>images\logos\badge\24.scale-100.png</PackagePath>
@@ -226,21 +218,13 @@
       <PackagePath>images\smalllogo.png</PackagePath>
       <Modified>2012-09-18T18:52:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\splashscreen.png">
-      <PackagePath>images\splashscreen.png</PackagePath>
-      <Modified>2012-09-18T18:52:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\storelogo.png">
-      <PackagePath>images\storelogo.png</PackagePath>
-      <Modified>2012-09-18T18:52:22.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-04-14T21:16:32.222</Modified>
+      <Modified>2013-04-15T22:05:08.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-04-14T19:56:08.697</Modified>
+      <Modified>2013-04-14T21:18:02.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -248,15 +232,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
-      <Modified>2013-04-14T18:42:27.438</Modified>
+      <Modified>2013-04-15T21:23:52.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.js">
       <PackagePath>pages\split\split.js</PackagePath>
-      <Modified>2013-03-18T18:54:51.460</Modified>
+      <Modified>2013-04-15T22:11:56.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
-      <Modified>2013-04-14T18:05:12.322</Modified>
+      <Modified>2013-04-15T21:14:58.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
@@ -268,7 +252,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-14T21:14:09.315</Modified>
+      <Modified>2013-04-15T20:08:17.497</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

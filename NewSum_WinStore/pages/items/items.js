@@ -9,7 +9,7 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             var listView = element.querySelector(".itemslist").winControl;
-            listView.itemDataSource = Data.groups.dataSource;
+            listView.itemDataSource = NewSum.categories.dataSource;
             listView.itemTemplate = element.querySelector(".itemtemplate");
             listView.oniteminvoked = this._itemInvoked.bind(this);
 
@@ -37,21 +37,18 @@
                 }
             }
         },
-
         // This function updates the ListView with new layouts
         _initializeLayout: function (listView, viewState) {
             /// <param name="listView" value="WinJS.UI.ListView.prototype" />
-
             if (viewState === appViewState.snapped) {
                 listView.layout = new ui.ListLayout();
             } else {
                 listView.layout = new ui.GridLayout();
             }
         },
-
         _itemInvoked: function (args) {
-            var groupKey = Data.groups.getAt(args.detail.itemIndex).key;
-            WinJS.Navigation.navigate("/pages/split/split.html", { groupKey: groupKey });
+            var categorySelected = NewSum.categories.getAt(args.detail.itemIndex);
+            WinJS.Navigation.navigate("/pages/split/split.html",{ categorySelected: categorySelected });// { groupKey: groupKey });
         }
     });
 })();

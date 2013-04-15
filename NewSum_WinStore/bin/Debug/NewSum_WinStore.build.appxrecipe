@@ -55,12 +55,6 @@
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\earth.png">
       <PackagePath>images\earth.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logo.png">
-      <PackagePath>images\logo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logo.scale-100.png">
-      <PackagePath>images\logo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\badge\24.scale-100.png">
       <PackagePath>images\logos\badge\24.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -172,12 +166,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\splashscreen.png">
-      <PackagePath>images\splashscreen.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\storelogo.png">
-      <PackagePath>images\storelogo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\data.js">
       <PackagePath>js\data.js</PackagePath>

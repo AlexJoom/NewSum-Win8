@@ -27,11 +27,11 @@ namespace NewSum_WinStore_ServiceProxy
         {
             return getCategoriesAsync(sCategory).AsAsyncOperation();
         }
-        public static Windows.Foundation.IAsyncOperation<string> getTopicIDs(string uSources, string sCategory)
+        public static Windows.Foundation.IAsyncOperation<IList<string>> getTopicIDs(string uSources, string sCategory)
         {
             return getTopicIDsAsync(uSources, sCategory).AsAsyncOperation();
         }
-        public static Windows.Foundation.IAsyncOperation<string> getTopicTitles(string uSources, string sCategory)
+        public static Windows.Foundation.IAsyncOperation<IList<string>> getTopicTitles(string uSources, string sCategory)
         {
             return getTopicTitlesAsync(uSources, sCategory).AsAsyncOperation();
         }
@@ -82,21 +82,22 @@ namespace NewSum_WinStore_ServiceProxy
             });
         }
         //TODO: Close the connection
-        internal static async Task<string> getTopicIDsAsync(string uSources, string sCategory)
+        internal static async Task<IList<string>> getTopicIDsAsync(string uSources, string sCategory)
         {
             return await Task.Run(async () =>
             {
-                var result = await GetClient().getTopicIDsAsync(uSources, sCategory);
-                return result.Body.@return;
+                var client = GetClient();
+                var result = await client.getTopicIDsAsync(uSources, sCategory);
+                return result.Body.@return.Split(new string[]{";,;"},  StringSplitOptions.RemoveEmptyEntries).ToList<string>();
             });
         }
         //TODO: Close the connection
-        internal static async Task<string> getTopicTitlesAsync(string uSources, string sCategory)
+        internal static async Task<IList<string>> getTopicTitlesAsync(string uSources, string sCategory)
         {
             return await Task.Run(async () =>
             {
                 var result = await GetClient().getTopicTitlesAsync(uSources, sCategory);
-                return result.Body.@return;
+                return result.Body.@return.Split(new string[] { ";,;" }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
             });
         }
         //TODO: Close the connection

@@ -1,7 +1,39 @@
 ﻿(function () {
     "use strict";
 
+    //define the name space
     WinJS.Namespace.define("NewSum");
+
+
+    //the category photos
+    var greece = "../../images/Parthenon_night_view.jpg";
+    var athletics = "../../images/basketball_middle.jpg";
+    var culture = "../../images/Patan_Nepal-Culture_of_Nepal.jpg";
+    var world = "../../images/earth.png";
+    var tech = "../../images/petri-dishes_w725_h498.jpg";
+    var various = "../../images/3591481091_6f63ecfd4e_q.jpg";
+
+    var categories = [
+        { key: "Κόσμος", title: "Κόσμος", subtitle: "", backgroundImage: world },
+        { key: "Ελλάδα", title: "Ελλάδα", subtitle: "", backgroundImage: greece },
+        { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "", backgroundImage: athletics },
+        { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "", backgroundImage: culture },
+        { key: "Επιστήμη", title: "Επιστήμη", subtitle: "", backgroundImage: tech },
+        { key: "Γενικά", title: "Γενικά", subtitle: "", backgroundImage: various }
+    ];
+
+    //create the binding list that will appear in the items.html view
+    NewSum.categories = new WinJS.Binding.List();
+    categories.forEach(function (item) {
+        NewSum.categories.push(item);
+    });
+
+
+
+
+
+
+
 
     var list = new WinJS.Binding.List();
     var groupedItems = list.createGrouped(
@@ -80,7 +112,7 @@
 
         // Each of these sample groups must have a unique key to be displayed separately.
         var sampleGroups = [
-            { key: "group1", title: "Κόσμος", subtitle: "15 νέα ", backgroundImage: world, description: groupDescription },
+            { key: " ", title: "Κόσμος", subtitle: "15 νέα ", backgroundImage: world, description: groupDescription },
             { key: "group2", title: "Ελλάδα", subtitle: "2 νέα ", backgroundImage: greece, description: groupDescription },
             { key: "group3", title: "Αθλητισμός", subtitle: "20 νέα ", backgroundImage: athletics, description: groupDescription },
             { key: "group4", title: "Πολιτισμός", subtitle: "0 νέα ", backgroundImage: culture, description: groupDescription },
@@ -135,20 +167,3 @@
     }
 })();
 
-
-
-NewSum.dataServices = function () {
-};
-NewSum.dataServices.prototype = function () {
-    var Init = function () {
-
-        NewSum_WinStore_ServiceProxy.ServiceProxy.getCategories("All").done(function (data) {
-
-          //todo: delimit categories
-
-        });
-    }
-    return {
-        Init: Init
-    }
-}();

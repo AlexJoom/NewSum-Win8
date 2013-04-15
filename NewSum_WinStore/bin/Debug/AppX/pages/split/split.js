@@ -19,20 +19,37 @@
         ready: function (element, options) {
             var listView = element.querySelector(".itemlist").winControl;
 
-            // Store information about the group and selection that this page will
-            // display.
-            this._group = (options && options.groupKey) ? Data.resolveGroupReference(options.groupKey) : Data.groups.getAt(0);
-            this._items = Data.getItemsFromGroup(this._group);
-            this._itemSelectionIndex = (options && "selectedIndex" in options) ? options.selectedIndex : -1;
+            var instance = this;
+            // Store information about the group and selection that this page will display.
+            instance._group = options.categorySelected; //(options && options.groupKey) ? Data.resolveGroupReference(options.groupKey) : Data.groups.getAt(0);
+            element.querySelector("header[role=banner] .pagetitle").textContent = instance._group.title;
 
-            element.querySelector("header[role=banner] .pagetitle").textContent = this._group.title;
 
             // Set up the ListView.
+            instance._items = new WinJS.Binding.List(); //Data.getItemsFromGroup(this._group);
+
+
+            // These three strings encode placeholder images. You will want to set the
+            // backgroundImage property in your real data to be URLs to images.
+            var darkGray = "../../images/logo_read.jpg";
+            var lightGray = "../../images/logoTemp.jpg";
+            var mediumGray = "../../images/logoTemp.jpg";
+
+            //now perform a service call in order to fill this binding lsit.
+            NewSum_WinStore_ServiceProxy.ServiceProxy.getTopicIDs("All", instance._group.key).done(function (response) {
+                NewSum_WinStore_ServiceProxy.ServiceProxy.getTopicTitles("All", instance._group.key).done(function (titles) {
+                    for (var i = 0; i < response.length; i++) {
+                        instance._items.push({ id: response[i], title: titles[i], subtitle: "time", description: titles[i], content: "content", backgroundImage: lightGray })
+                    }
+                });
+            });
+
             listView.itemDataSource = this._items.dataSource;
             listView.itemTemplate = element.querySelector(".itemtemplate");
             listView.onselectionchanged = this._selectionChanged.bind(this);
             listView.layout = new ui.ListLayout();
 
+            this._itemSelectionIndex = (options && "selectedIndex" in options) ? options.selectedIndex : -1;
             this._updateVisibility();
             if (this._isSingleColumn()) {
                 if (this._itemSelectionIndex >= 0) {
@@ -52,7 +69,8 @@
         },
 
         unload: function () {
-            this._items.dispose();
+            //todo: restore this;
+        //    this._items.dispose();
         },
 
         // This function updates the page layout in response to viewState changes.
