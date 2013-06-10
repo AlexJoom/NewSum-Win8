@@ -8,4 +8,4 @@ It is an intelligent “collage” of all the different information that you wou
 With the use of cutting-edge artificial intelligence technology, news items are summarised and all repeated information is not duplicated.
 
 
-Find out more at: http://goo.gl/jwRLx
+Find out more at: http://goo.gl/08yIf
