@@ -5,7 +5,7 @@
     <WindowsUser>Alx</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>26965257CAD01A544FB688E51909FE93B9D5F4CA14011071721CEE506054DAB9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9E9EE71DF9C121337FBB93EC68F090E88D0AD8492C71D01BE798E3EB291B2A1B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>85631ca2-4c5f-4149-954d-ba7cf9841971_0.1.0.0_neutral__xqsafypvtnfgy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>85631ca2-4c5f-4149-954d-ba7cf9841971_xqsafypvtnfgy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>85631ca2-4c5f-4149-954d-ba7cf9841971</RegisteredPackageID>
@@ -13,246 +13,254 @@
     <RegisteredVersion>0.1.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-15T22:02:55.621</Modified>
+      <Modified>2013-08-15T18:28:15.392</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore_ServiceProxy\bin\Debug\NewSum_WinStore_ServiceProxy.winmd">
-      <PackagePath>NewSum_WinStore_ServiceProxy.winmd</PackagePath>
-      <Modified>2013-04-15T22:02:55.003</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore_ServiceProxy\bin\Debug\NewSum_WinStore_ServiceProxy.pdb">
-      <PackagePath>NewSum_WinStore_ServiceProxy.pdb</PackagePath>
-      <Modified>2013-04-15T22:02:54.957</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-03-25T16:18:51.754</Modified>
+      <Modified>2013-08-02T15:56:37.382</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.css">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.css">
       <PackagePath>pages\items\items.css</PackagePath>
-      <Modified>2013-04-14T18:14:17.752</Modified>
+      <Modified>2013-08-02T15:56:37.900</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.css">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
-      <Modified>2013-03-20T23:36:18.997</Modified>
+      <Modified>2013-08-02T15:56:37.911</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\3499502280_a1a8ce4474_q.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\3499502280_a1a8ce4474_q.jpg">
       <PackagePath>images\3499502280_a1a8ce4474_q.jpg</PackagePath>
-      <Modified>2013-03-20T23:10:16.369</Modified>
+      <Modified>2013-08-02T15:56:37.395</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\3591481091_6f63ecfd4e_q.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\3591481091_6f63ecfd4e_q.jpg">
       <PackagePath>images\3591481091_6f63ecfd4e_q.jpg</PackagePath>
-      <Modified>2013-03-20T23:09:20.151</Modified>
+      <Modified>2013-08-02T15:56:37.406</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\basketball_middle.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\basketball_middle.jpg">
       <PackagePath>images\basketball_middle.jpg</PackagePath>
-      <Modified>2013-03-18T20:35:55.744</Modified>
+      <Modified>2013-08-02T15:56:37.439</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logoTemp.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logoTemp.jpg">
       <PackagePath>images\logoTemp.jpg</PackagePath>
-      <Modified>2013-03-20T23:19:07.397</Modified>
+      <Modified>2013-08-02T15:56:37.450</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logo_read.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logo_read.jpg">
       <PackagePath>images\logo_read.jpg</PackagePath>
-      <Modified>2013-03-20T23:31:30.546</Modified>
+      <Modified>2013-08-02T15:56:37.457</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\Parthenon_night_view.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\Parthenon_night_view.jpg">
       <PackagePath>images\Parthenon_night_view.jpg</PackagePath>
-      <Modified>2013-03-20T23:09:07.056</Modified>
+      <Modified>2013-08-02T15:56:37.414</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\Patan_Nepal-Culture_of_Nepal.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\Patan_Nepal-Culture_of_Nepal.jpg">
       <PackagePath>images\Patan_Nepal-Culture_of_Nepal.jpg</PackagePath>
-      <Modified>2013-03-20T23:08:12.117</Modified>
+      <Modified>2013-08-02T15:56:37.428</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\petri-dishes_w725_h498.jpg">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\petri-dishes_w725_h498.jpg">
       <PackagePath>images\petri-dishes_w725_h498.jpg</PackagePath>
-      <Modified>2013-03-20T23:08:08.601</Modified>
+      <Modified>2013-08-02T15:56:37.855</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\earth.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\earth.png">
       <PackagePath>images\earth.png</PackagePath>
-      <Modified>2013-03-20T23:08:02.757</Modified>
+      <Modified>2013-08-02T15:56:37.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\badge\24.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\badge\24.scale-100.png">
       <PackagePath>images\logos\badge\24.scale-100.png</PackagePath>
-      <Modified>2013-04-14T15:41:41.722</Modified>
+      <Modified>2013-08-02T15:56:37.539</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\badge\24.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\badge\24.scale-140.png">
       <PackagePath>images\logos\badge\24.scale-140.png</PackagePath>
-      <Modified>2013-04-14T17:03:38.126</Modified>
+      <Modified>2013-08-02T15:56:37.542</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\badge\24.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\badge\24.scale-180.png">
       <PackagePath>images\logos\badge\24.scale-180.png</PackagePath>
-      <Modified>2013-04-14T17:01:29.871</Modified>
+      <Modified>2013-08-02T15:56:37.547</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\logo\150.fw.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\logo\150.fw.scale-100.png">
       <PackagePath>images\logos\logo\150.fw.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:38:05.162</Modified>
+      <Modified>2013-08-02T15:56:37.552</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\logo\150.fw.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\logo\150.fw.scale-140.png">
       <PackagePath>images\logos\logo\150.fw.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:38:48.992</Modified>
+      <Modified>2013-08-02T15:56:37.557</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\logo\150.fw.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\logo\150.fw.scale-180.png">
       <PackagePath>images\logos\logo\150.fw.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:36:42.381</Modified>
+      <Modified>2013-08-02T15:56:37.704</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\logo\150.fw.scale-80.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\logo\150.fw.scale-80.png">
       <PackagePath>images\logos\logo\150.fw.scale-80.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:40:10.399</Modified>
+      <Modified>2013-08-02T15:56:37.708</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\NewSum_logo_withTitle_1000x873.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\NewSum_logo_withTitle_1000x873.png">
       <PackagePath>images\logos\NewSum_logo_withTitle_1000x873.png</PackagePath>
-      <Modified>2013-04-09T23:34:24.000</Modified>
+      <Modified>2013-08-02T15:56:37.475</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\NewSum_logo_withTitle_100x83.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\NewSum_logo_withTitle_100x83.png">
       <PackagePath>images\logos\NewSum_logo_withTitle_100x83.png</PackagePath>
-      <Modified>2013-04-09T23:34:14.000</Modified>
+      <Modified>2013-08-02T15:56:37.479</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\NewSum_logo_withTitle_250x209.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\NewSum_logo_withTitle_250x209.png">
       <PackagePath>images\logos\NewSum_logo_withTitle_250x209.png</PackagePath>
-      <Modified>2013-04-09T23:34:16.000</Modified>
+      <Modified>2013-08-02T15:56:37.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\NewSum_logo_withTitle_500x476.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\NewSum_logo_withTitle_500x476.png">
       <PackagePath>images\logos\NewSum_logo_withTitle_500x476.png</PackagePath>
-      <Modified>2013-04-09T23:34:18.000</Modified>
+      <Modified>2013-08-02T15:56:37.534</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.scale-100.png">
       <PackagePath>images\logos\small\30.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:41:28.163</Modified>
+      <Modified>2013-08-02T15:56:37.714</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.scale-140.png">
       <PackagePath>images\logos\small\30.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:41:16.157</Modified>
+      <Modified>2013-08-02T15:56:37.719</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.scale-180.png">
       <PackagePath>images\logos\small\30.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:41:03.057</Modified>
+      <Modified>2013-08-02T15:56:37.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.scale-80.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.scale-80.png">
       <PackagePath>images\logos\small\30.scale-80.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:41:41.722</Modified>
+      <Modified>2013-08-02T15:56:37.739</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.targetsize-16.png">
       <PackagePath>images\logos\small\30.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:42:38.090</Modified>
+      <Modified>2013-08-02T15:56:37.743</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.targetsize-256.png">
       <PackagePath>images\logos\small\30.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:41:50.718</Modified>
+      <Modified>2013-08-02T15:56:37.751</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.targetsize-32.png">
       <PackagePath>images\logos\small\30.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:42:23.979</Modified>
+      <Modified>2013-08-02T15:56:37.755</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\small\30.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\small\30.targetsize-48.png">
       <PackagePath>images\logos\small\30.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:42:09.903</Modified>
+      <Modified>2013-08-02T15:56:37.759</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\splashscreen\620x300.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\splashscreen\620x300.scale-100.png">
       <PackagePath>images\logos\splashscreen\620x300.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T16:05:09.343</Modified>
+      <Modified>2013-08-02T15:56:37.770</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\splashscreen\620x300.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\splashscreen\620x300.scale-140.png">
       <PackagePath>images\logos\splashscreen\620x300.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T16:04:12.970</Modified>
+      <Modified>2013-08-02T15:56:37.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\splashscreen\620x300.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\splashscreen\620x300.scale-180.png">
       <PackagePath>images\logos\splashscreen\620x300.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T16:03:01.078</Modified>
+      <Modified>2013-08-02T15:56:37.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\store\50.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\store\50.scale-100.png">
       <PackagePath>images\logos\store\50.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:44:20.906</Modified>
+      <Modified>2013-08-02T15:56:37.800</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\store\50.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\store\50.scale-140.png">
       <PackagePath>images\logos\store\50.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:43:37.902</Modified>
+      <Modified>2013-08-02T15:56:37.805</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\store\50.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\store\50.scale-180.png">
       <PackagePath>images\logos\store\50.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:42:57.150</Modified>
+      <Modified>2013-08-02T15:56:37.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\wide\310x150.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\wide\310x150.scale-100.png">
       <PackagePath>images\logos\wide\310x150.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:53:56.254</Modified>
+      <Modified>2013-08-02T15:56:37.820</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\wide\310x150.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\wide\310x150.scale-140.png">
       <PackagePath>images\logos\wide\310x150.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:53:37.556</Modified>
+      <Modified>2013-08-02T15:56:37.826</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\wide\310x150.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\wide\310x150.scale-180.png">
       <PackagePath>images\logos\wide\310x150.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:51:40.018</Modified>
+      <Modified>2013-08-02T15:56:37.838</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\logos\wide\310x150.scale-80.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\wide\310x150.scale-80.png">
       <PackagePath>images\logos\wide\310x150.scale-80.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-14T15:54:21.700</Modified>
+      <Modified>2013-08-02T15:56:37.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
-      <Modified>2012-09-18T18:52:22.000</Modified>
+      <Modified>2013-08-02T15:56:37.858</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\data.js">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-04-15T22:05:08.896</Modified>
+      <Modified>2013-08-02T15:56:37.878</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-04-14T21:18:02.286</Modified>
+      <Modified>2013-08-02T15:56:37.882</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
-      <Modified>2013-03-18T18:54:51.382</Modified>
+      <Modified>2013-08-02T15:56:37.885</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.js">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
-      <Modified>2013-04-15T21:23:52.385</Modified>
+      <Modified>2013-08-02T15:56:37.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.js">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.js">
       <PackagePath>pages\split\split.js</PackagePath>
-      <Modified>2013-04-15T22:11:56.003</Modified>
+      <Modified>2013-08-15T18:44:06.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\items\items.html">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\Scripts\linq-vsdoc.js">
+      <PackagePath>Scripts\linq-vsdoc.js</PackagePath>
+      <Modified>2013-08-15T18:25:21.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\Scripts\linq.js">
+      <PackagePath>Scripts\linq.js</PackagePath>
+      <Modified>2013-08-15T18:25:22.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\Scripts\linq.min.js">
+      <PackagePath>Scripts\linq.min.js</PackagePath>
+      <Modified>2013-08-15T18:25:22.771</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\packages.config">
+      <PackagePath>packages.config</PackagePath>
+      <Modified>2013-08-15T18:25:24.731</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
-      <Modified>2013-04-15T21:14:58.583</Modified>
+      <Modified>2013-08-02T15:56:37.904</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\pages\split\split.html">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
-      <Modified>2013-03-20T23:36:18.986</Modified>
+      <Modified>2013-08-02T15:56:37.915</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\default.html">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-03-20T23:58:19.460</Modified>
+      <Modified>2013-08-15T18:25:57.601</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-04-15T20:08:17.497</Modified>
+      <Modified>2013-08-15T18:28:14.730</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

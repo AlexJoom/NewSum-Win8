@@ -42,9 +42,13 @@ images\smalllogo.png
 js\data.js
 js\default.js
 js\navigator.js
+packages.config
 pages\items\items.css
 pages\items\items.html
 pages\items\items.js
 pages\split\split.css
 pages\split\split.html
 pages\split\split.js
+Scripts\linq.js
+Scripts\linq.min.js
+Scripts\linq-vsdoc.js

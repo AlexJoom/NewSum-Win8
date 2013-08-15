@@ -15,3 +15,16 @@ C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinSto
 C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\NewSum_WinStore_ServiceProxy.pdb
 C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bin\Debug\NewSum_WinStore_ServiceProxy.pri
 C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore\bld\Debug\NewSum_WinStore.jsprojResolveAssemblyReference.cache
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\NewSum_WinStore.build.appxrecipe
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\priconfig.xml.intermediate
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\layout.resfiles.intermediate
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\resources.resfiles.intermediate
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\pri.resfiles.intermediate
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\priconfig.xml
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\layout.resfiles
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\resources.resfiles
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\pri.resfiles
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\LanguageQualifiers.txt
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\ProjectArchitectures.txt

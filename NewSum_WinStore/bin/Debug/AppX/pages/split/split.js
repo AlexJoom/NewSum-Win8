@@ -35,14 +35,53 @@
             var lightGray = "../../images/logoTemp.jpg";
             var mediumGray = "../../images/logoTemp.jpg";
 
-            //now perform a service call in order to fill this binding lsit.
-            NewSum_WinStore_ServiceProxy.ServiceProxy.getTopicIDs("All", instance._group.key).done(function (response) {
-                NewSum_WinStore_ServiceProxy.ServiceProxy.getTopicTitles("All", instance._group.key).done(function (titles) {
-                    for (var i = 0; i < response.length; i++) {
-                        instance._items.push({ id: response[i], title: titles[i], subtitle: "time", description: titles[i], content: "content", backgroundImage: lightGray })
+            var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=500";
+            WinJS.xhr({ url: mongoUrl }).done(
+                function (response) {
+                    var articles = JSON.parse(response.responseText);
+
+                    var filtered =
+                    Enumerable.From(articles).Where(function (art) {
+                        return art.CategoryName == instance._group.key;
+                    }).ToArray();
+                    
+                    for (var i = 0; i < filtered.length; i++) {
+                        var a = filtered[i];
+
+                        var content = "";
+                        for (var j = 0; j < a.SummarySentences.length; j++) {
+                            var s = a.SummarySentences[j];
+                            content += s.Text + "<br/>";
+                        }
+                        instance._items.push({
+                            id: a._id,
+                            title: a.Title,
+                            subtitle: a.milliseconds,
+                            description: "",
+                            content: content,
+                            backgroundImage: lightGray
+                        });
                     }
+                },
+                function (error) {
+                    //an error occurred
+                    console.log(error);
+
+                },
+                function (progress) {
+                    console.log(progress);
                 });
-            });
+
+
+            //retreive data from the global object.
+
+            //filter by category
+
+            //push to binding list.
+            //for (var i = 0; i < response.length; i++) {
+
+            //}
+
 
             listView.itemDataSource = this._items.dataSource;
             listView.itemTemplate = element.querySelector(".itemtemplate");
@@ -70,7 +109,7 @@
 
         unload: function () {
             //todo: restore this;
-        //    this._items.dispose();
+            //    this._items.dispose();
         },
 
         // This function updates the page layout in response to viewState changes.

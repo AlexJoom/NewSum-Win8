@@ -10,3 +10,19 @@ C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinSto
 C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore_ServiceProxy\obj\Debug\resources.resfiles
 C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore_ServiceProxy\obj\Debug\pri.resfiles
 C:\Users\Alx\Documents\Visual Studio 2012\Projects\NewSum_WinStore\NewSum_WinStore_ServiceProxy\obj\Debug\LanguageQualifiers.txt
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\bin\Debug\NewSum_WinStore_ServiceProxy.winmd
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\bin\Debug\NewSum_WinStore_ServiceProxy.pdb
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\bin\Debug\NewSum_WinStore_ServiceProxy.pri
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\NewSum_WinStore_ServiceProxy.winmd
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\NewSum_WinStore_ServiceProxy.pdb
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\NewSum_WinStore_ServiceProxy.winmdobj
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\NewSum_WinStore_ServiceProxy.compile.pdb
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\priconfig.xml
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\layout.resfiles
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\resources.resfiles
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\pri.resfiles
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\LanguageQualifiers.txt
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\priconfig.xml.intermediate
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\layout.resfiles.intermediate
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\resources.resfiles.intermediate
+C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore_ServiceProxy\obj\Debug\pri.resfiles.intermediate
