@@ -35,52 +35,26 @@
             var lightGray = "../../images/logoTemp.jpg";
             var mediumGray = "../../images/logoTemp.jpg";
 
-            var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=500";
-            WinJS.xhr({ url: mongoUrl }).done(
-                function (response) {
-                    var articles = JSON.parse(response.responseText);
 
-                    var filtered =
-                    Enumerable.From(articles).Where(function (art) {
-                        return art.CategoryName == instance._group.key;
-                    }).ToArray();
-                    
-                    for (var i = 0; i < filtered.length; i++) {
-                        var a = filtered[i];
+            var filtered = Enumerable.From(NewSum.articles).Where(function (art) { return art.CategoryName == instance._group.key; }).ToArray();
 
-                        var content = "";
-                        for (var j = 0; j < a.SummarySentences.length; j++) {
-                            var s = a.SummarySentences[j];
-                            content += s.Text + "<br/>";
-                        }
-                        instance._items.push({
-                            id: a._id,
-                            title: a.Title,
-                            subtitle: a.milliseconds,
-                            description: "",
-                            content: content,
-                            backgroundImage: lightGray
-                        });
-                    }
-                },
-                function (error) {
-                    //an error occurred
-                    console.log(error);
+            for (var i = 0; i < filtered.length; i++) {
+                var a = filtered[i];
 
-                },
-                function (progress) {
-                    console.log(progress);
+                var content = "";
+                for (var j = 0; j < a.SummarySentences.length; j++) {
+                    var s = a.SummarySentences[j];
+                    content += s.Text + "<br/>";
+                }
+                instance._items.push({
+                    id: a._id,
+                    title: a.Title,
+                    subtitle: a.milliseconds,
+                    description: "",
+                    content: content,
+                    backgroundImage: lightGray
                 });
-
-
-            //retreive data from the global object.
-
-            //filter by category
-
-            //push to binding list.
-            //for (var i = 0; i < response.length; i++) {
-
-            //}
+            }
 
 
             listView.itemDataSource = this._items.dataSource;

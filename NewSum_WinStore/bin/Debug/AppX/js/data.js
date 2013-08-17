@@ -4,7 +4,6 @@
     //define the name space
     WinJS.Namespace.define("NewSum");
 
-
     //the category photos
     var greece = "../../images/Parthenon_night_view.jpg";
     var athletics = "../../images/basketball_middle.jpg";
@@ -12,6 +11,12 @@
     var world = "../../images/earth.png";
     var tech = "../../images/petri-dishes_w725_h498.jpg";
     var various = "../../images/3591481091_6f63ecfd4e_q.jpg";
+
+    // These three strings encode placeholder images. You will want to set the
+    // backgroundImage property in your real data to be URLs to images.
+    var darkGray = "../../images/logo_read.jpg";
+    var lightGray = "../../images/logoTemp.jpg";
+    var mediumGray = "../../images/logoTemp.jpg";
 
     var categories = [
         { key: "Κόσμος", title: "Κόσμος", subtitle: "", backgroundImage: world },
@@ -24,15 +29,23 @@
 
     //create the binding list that will appear in the items.html view
     NewSum.categories = new WinJS.Binding.List();
+    NewSum.articles = null;
     categories.forEach(function (item) {
         NewSum.categories.push(item);
     });
 
+    var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=1000";
+    NewSum.dataLoaded = WinJS.xhr({ url: mongoUrl });
+    NewSum.dataLoaded.done(
+        function (response) {
+            NewSum.articles = JSON.parse(response.responseText);
 
-
-
-
-
+            NewSum.distinctArticles = Enumerable.From(NewSum.articles).Select(function (i) {
+                return i.CategoryName;
+            }).Distinct().ToArray();
+        },
+        function (error) { console.log(error); },
+        function (progress) { console.log(progress); });
 
 
     var list = new WinJS.Binding.List();
@@ -41,11 +54,6 @@
         function groupDataSelector(item) { return item.group; }
     );
 
-    // TODO: Replace the data with your real data.
-    // You can add data from asynchronous sources whenever it becomes available.
-    generateSampleData().forEach(function (item) {
-        list.push(item);
-    });
 
     WinJS.Namespace.define("Data", {
         items: groupedItems,
@@ -88,82 +96,5 @@
         }
     }
 
-    // Returns an array of sample data that can be added to the application's
-    // data list. 
-    function generateSampleData() {
-        var itemContent = "<p>Περισσότερη ευελιξία ως προς το τέλος φορολόγησης των καταθέσεων στην Κύπρο ζήτησαν, σύμφωνα με πληροφορίες, οι περισσότεροι υπουργοί Οικονομικών της ευρωζώνης στην τηλεδιάσκεψη του Eurogroup." +
-            "Συγκεκριμένα, όπως αναφέρουν ασφαλείς πηγές, ζήτησαν τη διαφύλαξη των καταθέσεων έως 100.000 ευρώ, και αντίστοιχα την αναπροσαρμογή του σχετικού συντελεστή επί του τέλους στις καταθέσεις υπεράνω του ποσού αυτού, προκειμένου να συγκεντρωθεί το πόσο που έχει αρχικώς αποφασιστεί κατά την τελευταία συνεδρίασή του συμβουλίου υπουργών Οικονομικών στις Βρυξέλλες." +
-            "Η εξέλιξη αυτή έρχεται ως συνέχεια του τσουνάμι των αντιδράσεων στην απόφαση για κούρεμα των καταθέσεων στην Κύπρο.</p>";
-        var itemDescription = "Περισσότερη ευελιξία ως προς το τέλος φορολόγησης των καταθέσεων στην Κύπρο ζήτησαν, σύμφωνα με πληροφορίες, οι περισσότεροι υπουργοί...";
-        var groupDescription = "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante";
-
-        // These three strings encode placeholder images. You will want to set the
-        // backgroundImage property in your real data to be URLs to images.
-        var darkGray = "../../images/logo_read.jpg";
-        var lightGray = "../../images/logoTemp.jpg";
-        var mediumGray = "../../images/logoTemp.jpg";
-
-        var greece = "../../images/Parthenon_night_view.jpg";
-        var athletics = "../../images/basketball_middle.jpg";
-        var culture = "../../images/Patan_Nepal-Culture_of_Nepal.jpg";
-        var world = "../../images/earth.png";
-        var tech = "../../images/petri-dishes_w725_h498.jpg";
-        var various = "../../images/3591481091_6f63ecfd4e_q.jpg";
-
-        // Each of these sample groups must have a unique key to be displayed separately.
-        var sampleGroups = [
-            { key: " ", title: "Κόσμος", subtitle: "15 νέα ", backgroundImage: world, description: groupDescription },
-            { key: "group2", title: "Ελλάδα", subtitle: "2 νέα ", backgroundImage: greece, description: groupDescription },
-            { key: "group3", title: "Αθλητισμός", subtitle: "20 νέα ", backgroundImage: athletics, description: groupDescription },
-            { key: "group4", title: "Πολιτισμός", subtitle: "0 νέα ", backgroundImage: culture, description: groupDescription },
-            { key: "group5", title: "Επιστήμη", subtitle: "30 νέα", backgroundImage: tech, description: groupDescription },
-            { key: "group6", title: "Γενικά", subtitle: "3 νέα ", backgroundImage: various, description: groupDescription }
-        ];
-
-        // Each of these sample items should have a reference to a particular
-        // group.
-        var sampleItems = [
-            { group: sampleGroups[0], title: "Eurogroup: Περισσότερη ευελιξία ως προς το κούρεμα", subtitle: "πριν 10 λεπτά", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[0], title: "Η γελοιογραφία που σαρώνει στην Κύπρο", subtitle: "πριν 20 λεπτά", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "Νέα έκδοση WhatsApp Messenger για Android", subtitle: "πριν 2 ώρες", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[0], title: "Topic: 4", subtitle: "πριν 1 μέρα", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "Topic: 5", subtitle: "πριν 2 μέρες", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-
-            { group: sampleGroups[1], title: "Topic: 1", subtitle: "πριν 10 λεπτά", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[1], title: "Topic: 2", subtitle: "πριν 2 ώρες", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[1], title: "Topic: 3", subtitle: "πριν 2 μέρες", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-
-            { group: sampleGroups[2], title: "Topic: 1", subtitle: "πριν 10 λεπτά", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[2], title: "Topic: 2", subtitle: "πριν 20 λεπτά", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[2], title: "Topic: 3", subtitle: "πριν 2 ώρες", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[2], title: "Topic: 4", subtitle: "πριν 2 ώρες", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[2], title: "Topic: 5", subtitle: "πριν 3 ώρες", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[2], title: "Topic: 6", subtitle: "πριν 4 ώρες", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[2], title: "Topic: 7", subtitle: "πριν 4 ώρες", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-
-            { group: sampleGroups[3], title: "Topic: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[3], title: "Topic: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[3], title: "Topic: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[3], title: "Topic: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[3], title: "Topic: 5", subtitle: "Item Subtitle: 5", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[3], title: "Topic: 6", subtitle: "Item Subtitle: 6", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-
-            { group: sampleGroups[4], title: "Topic: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[4], title: "Topic: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[4], title: "Topic: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[4], title: "Topic: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-
-            { group: sampleGroups[5], title: "Topic: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[5], title: "Topic: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[5], title: "Topic: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[5], title: "Topic: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[5], title: "Topic: 5", subtitle: "Item Subtitle: 5", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[5], title: "Topic: 6", subtitle: "Item Subtitle: 6", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[5], title: "Topic: 7", subtitle: "Item Subtitle: 7", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[5], title: "Topic: 8", subtitle: "Item Subtitle: 8", description: itemDescription, content: itemContent, backgroundImage: lightGray }
-        ];
-
-        return sampleItems;
-    }
 })();
 

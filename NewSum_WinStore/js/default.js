@@ -18,7 +18,7 @@
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }
-
+            
             if (app.sessionState.history) {
                 nav.history = app.sessionState.history;
             }
@@ -30,6 +30,7 @@
                     return nav.navigate(Application.navigator.home);
                 }
             }));
+
         }
     });
 
