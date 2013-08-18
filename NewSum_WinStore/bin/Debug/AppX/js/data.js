@@ -34,7 +34,7 @@
         NewSum.categories.push(item);
     });
 
-    var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=1000";
+    var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=500";
     NewSum.dataLoaded = WinJS.xhr({ url: mongoUrl });
     NewSum.dataLoaded.done(
         function (response) {
