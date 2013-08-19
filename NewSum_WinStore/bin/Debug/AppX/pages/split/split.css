@@ -67,6 +67,7 @@
 
                     .splitpage .itemlistsection .itemlist .item .item-info .item-subtitle {
                         opacity: 0.6;
+						font-size:10pt;
                     }
 
                     .splitpage .itemlistsection .itemlist .item .item-info .item-description {

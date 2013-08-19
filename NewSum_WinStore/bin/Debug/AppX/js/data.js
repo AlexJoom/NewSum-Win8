@@ -19,19 +19,37 @@
     var mediumGray = "../../images/logoTemp.jpg";
 
     var categories = [
-        { key: "Κόσμος", title: "Κόσμος", subtitle: "", backgroundImage: world },
-        { key: "Ελλάδα", title: "Ελλάδα", subtitle: "", backgroundImage: greece },
-        { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "", backgroundImage: athletics },
-        { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "", backgroundImage: culture },
-        { key: "Επιστήμη", title: "Επιστήμη", subtitle: "", backgroundImage: tech },
-        { key: "Γενικά", title: "Γενικά", subtitle: "", backgroundImage: various }
+        { key: "Κόσμος", title: "Κόσμος", subtitle: "...", backgroundImage: world },
+        { key: "Ελλάδα", title: "Ελλάδα", subtitle: "..._win-proxy", backgroundImage: greece },
+        { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "...", backgroundImage: athletics },
+        { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "...", backgroundImage: culture },
+        { key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", backgroundImage: tech },
+        { key: "Γενικά", title: "Γενικά", subtitle: "...", backgroundImage: various }
     ];
 
     //create the binding list that will appear in the items.html view
     NewSum.categories = new WinJS.Binding.List();
     NewSum.articles = null;
     categories.forEach(function (item) {
-        NewSum.categories.push(item);
+        NewSum.categories.push(WinJS.Binding.as(item));
+    });
+    
+
+    var latestNews = "https://api.mongolab.com/api/1/databases/newsum/collections/latestnews?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco";
+    WinJS.xhr({ url: latestNews }).done(function (response) {
+        var latest = JSON.parse(response.responseText);
+
+        NewSum.categories.forEach(function (item, index) {
+
+            var ctx = Enumerable.From(latest).First(function (i) {
+                return i.CategoryName == item.key;
+            });
+
+            var newLabel = ctx.TotalToday == 1 ? "νέο" : "νέα";
+            item.subtitle = "(" + ctx.TotalToday + " " + newLabel + ")";
+        });
+       
+        
     });
 
     var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=500";
