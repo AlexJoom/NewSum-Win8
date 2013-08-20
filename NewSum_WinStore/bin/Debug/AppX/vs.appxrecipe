@@ -26,7 +26,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.css">
       <PackagePath>pages\items\items.css</PackagePath>
-      <Modified>2013-08-19T22:17:53.507</Modified>
+      <Modified>2013-08-19T22:18:05.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
@@ -212,7 +212,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-08-19T22:15:47.215</Modified>
+      <Modified>2013-08-20T20:56:04.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -224,11 +224,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
-      <Modified>2013-08-02T15:56:37.906</Modified>
+      <Modified>2013-08-19T22:29:33.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.js">
       <PackagePath>pages\split\split.js</PackagePath>
-      <Modified>2013-08-17T18:41:22.967</Modified>
+      <Modified>2013-08-20T21:09:26.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\Scripts\linq-vsdoc.js">
       <PackagePath>Scripts\linq-vsdoc.js</PackagePath>
@@ -252,7 +252,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
-      <Modified>2013-08-18T09:30:59.214</Modified>
+      <Modified>2013-08-19T22:29:30.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\default.html">
       <PackagePath>default.html</PackagePath>

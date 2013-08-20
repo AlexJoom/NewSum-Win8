@@ -4,6 +4,10 @@
     //define the name space
     WinJS.Namespace.define("NewSum");
 
+    NewSum.millisecondsToDateTime = function (milliseconds) {
+        milliseconds.subtitle = "tst";
+    };
+    
     //the category photos
     var greece = "../../images/Parthenon_night_view.jpg";
     var athletics = "../../images/basketball_middle.jpg";
@@ -19,17 +23,16 @@
     var mediumGray = "../../images/logoTemp.jpg";
 
     var categories = [
-        { key: "Κόσμος", title: "Κόσμος", subtitle: "...", backgroundImage: world },
-        { key: "Ελλάδα", title: "Ελλάδα", subtitle: "..._win-proxy", backgroundImage: greece },
-        { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "...", backgroundImage: athletics },
-        { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "...", backgroundImage: culture },
-        { key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", backgroundImage: tech },
-        { key: "Γενικά", title: "Γενικά", subtitle: "...", backgroundImage: various }
+        { key: "Κόσμος", title: "Κόσμος", subtitle: "...", articles:[], backgroundImage: world },
+        { key: "Ελλάδα", title: "Ελλάδα", subtitle: "...", articles: [], backgroundImage: greece },
+        { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "...", articles: [], backgroundImage: athletics },
+        { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "...", articles: [], backgroundImage: culture },
+        { key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", articles: [], backgroundImage: tech },
+        { key: "Γενικά", title: "Γενικά", subtitle: "...", articles: [], backgroundImage: various }
     ];
 
     //create the binding list that will appear in the items.html view
     NewSum.categories = new WinJS.Binding.List();
-    NewSum.articles = null;
     categories.forEach(function (item) {
         NewSum.categories.push(WinJS.Binding.as(item));
     });
@@ -40,30 +43,28 @@
         var latest = JSON.parse(response.responseText);
 
         NewSum.categories.forEach(function (item, index) {
-
             var ctx = Enumerable.From(latest).First(function (i) {
                 return i.CategoryName == item.key;
             });
-
             var newLabel = ctx.TotalToday == 1 ? "νέο" : "νέα";
+            item.articles = ctx.Articles;
             item.subtitle = "(" + ctx.TotalToday + " " + newLabel + ")";
         });
-       
-        
     });
 
-    var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=500";
-    NewSum.dataLoaded = WinJS.xhr({ url: mongoUrl });
-    NewSum.dataLoaded.done(
-        function (response) {
-            NewSum.articles = JSON.parse(response.responseText);
 
-            NewSum.distinctArticles = Enumerable.From(NewSum.articles).Select(function (i) {
-                return i.CategoryName;
-            }).Distinct().ToArray();
-        },
-        function (error) { console.log(error); },
-        function (progress) { console.log(progress); });
+    //NewSum.articles = new WinJS.Binding.List();
+    //var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=500";
+    //WinJS.xhr({ url: mongoUrl }).done(
+    //    function (response) {
+    //        var articles = JSON.parse(response.responseText);
+
+    //        articles.forEach(function(item, index) {
+    //            NewSum.articles.push(item);
+    //        });            
+    //    },
+    //    function (error) { console.log(error); },
+    //    function (progress) { console.log(progress); });
 
 
     var list = new WinJS.Binding.List();

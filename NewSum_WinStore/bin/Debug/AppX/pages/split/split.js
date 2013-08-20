@@ -6,7 +6,37 @@
     var nav = WinJS.Navigation;
     var ui = WinJS.UI;
     var utils = WinJS.Utilities;
+    var getTimeElapsed = function (milliseconds) {
+        var minutes = ((new Date()) - new Date(milliseconds)) / (1000.0 * 60);
 
+        if (minutes < 5) {
+            return "μόλις τώρα";
+        }
+
+        if (minutes < 60) {
+            return "πριν " + Math.round(minutes) + " λεπτά";
+        }
+
+        var hours = minutes / 60;
+
+        if (hours < 1.5) {
+            return "πριν 1 ώρα";
+        }
+        if (hours < 24) {
+            return "πριν " + Math.round(hours) + " ώρες";
+        }
+
+        var days = hours / 24;
+
+        if (days < 1) {
+            return "πριν 1 μέρα";
+        }
+        else {
+            return "πριν " + Math.round(days) + " μέρες";
+        }
+
+    };
+    
     ui.Pages.define("/pages/split/split.html", {
 
         /// <field type="WinJS.Binding.List" />
@@ -35,11 +65,17 @@
             var lightGray = "../../images/logoTemp.jpg";
             var mediumGray = "../../images/logoTemp.jpg";
 
+            var latestNews = null;
+            NewSum.categories.forEach(function (item, index) {
+                if (item.key == instance._group.key) {
+                    latestNews = item.articles;
+                    return false; //stop iteration;
+                }
+            });
 
-            var filtered = Enumerable.From(NewSum.articles).Where(function (art) { return art.CategoryName == instance._group.key; }).ToArray();
 
-            for (var i = 0; i < filtered.length; i++) {
-                var a = filtered[i];
+            for (var i = 0; i < latestNews.length; i++) {
+                var a = latestNews[i];
 
                 var content = "";
                 for (var j = 0; j < a.SummarySentences.length; j++) {
@@ -49,12 +85,14 @@
                 instance._items.push({
                     id: a._id,
                     title: a.Title,
-                    subtitle: a.milliseconds,
+                    subtitle: getTimeElapsed(a.milliseconds),
                     description: "",
                     content: content,
                     backgroundImage: lightGray
                 });
             }
+
+         
 
 
             listView.itemDataSource = this._items.dataSource;

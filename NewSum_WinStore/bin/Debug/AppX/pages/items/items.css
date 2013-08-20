@@ -48,7 +48,6 @@
                 -ms-grid-row: 2;
                 width: 220px;
                 font-size: 11pt;
-                padding-bottom: 10px;
             }
 
 @media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {

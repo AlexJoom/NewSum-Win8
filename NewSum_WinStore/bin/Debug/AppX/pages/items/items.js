@@ -8,6 +8,10 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
+            
+          ///  WinJS.Utilities.markSupportedForProcessing(NewSum.millisecondsToDateTime);
+            
+
             var listView = element.querySelector(".itemslist").winControl;
             listView.itemDataSource = NewSum.categories.dataSource;
             listView.itemTemplate = element.querySelector(".itemtemplate");
