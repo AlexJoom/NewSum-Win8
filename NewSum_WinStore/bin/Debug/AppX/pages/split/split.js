@@ -14,7 +14,7 @@
         }
 
         if (minutes < 60) {
-            return "πριν " + Math.round(minutes) + " λεπτά";
+            return  Math.round(minutes) + " λεπτά πριν";
         }
 
         var hours = minutes / 60;
@@ -23,7 +23,7 @@
             return "πριν 1 ώρα";
         }
         if (hours < 24) {
-            return "πριν " + Math.round(hours) + " ώρες";
+            return Math.round(hours) + " ώρες πριν";
         }
 
         var days = hours / 24;
@@ -32,7 +32,7 @@
             return "πριν 1 μέρα";
         }
         else {
-            return "πριν " + Math.round(days) + " μέρες";
+            return Math.round(days) + " μέρες πριν";
         }
 
     };

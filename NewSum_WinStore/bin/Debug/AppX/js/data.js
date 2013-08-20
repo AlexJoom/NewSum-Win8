@@ -28,6 +28,7 @@
         { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "...", articles: [], backgroundImage: athletics },
         { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "...", articles: [], backgroundImage: culture },
         { key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", articles: [], backgroundImage: tech },
+         { key: "Οικονομία", title: "Οικονομία", subtitle: "...", articles: [], backgroundImage: various },
         { key: "Γενικά", title: "Γενικά", subtitle: "...", articles: [], backgroundImage: various }
     ];
 
