@@ -6,42 +6,11 @@
     var nav = WinJS.Navigation;
     var ui = WinJS.UI;
     var utils = WinJS.Utilities;
-    var getTimeElapsed = function(milliseconds) {
-        var minutes = ((new Date()) - new Date(milliseconds)) / (1000.0 * 60);
-
-        if (minutes < 5) {
-            return "μόλις τώρα";
-        }
-
-        if (minutes < 60) {
-            return Math.round(minutes) + " λεπτά πριν";
-        }
-
-        var hours = minutes / 60;
-
-        if (hours < 1.5) {
-            return "πριν 1 ώρα";
-        }
-        if (hours < 24) {
-            return Math.round(hours) + " ώρες πριν";
-        }
-
-        var days = hours / 24;
-
-        if (days < 1) {
-            return "πριν 1 μέρα";
-        } else {
-            return Math.round(days) + " μέρες πριν";
-        }
-
-    },
-        fetchRestOfTheArticles = function(categName) {
-        };
 
     ui.Pages.define("/pages/split/split.html", {
 
-        /// <field type="WinJS.Binding.List" />
-        _items: null,
+        
+        //_items: null,
         _group: null,
         _itemSelectionIndex: -1,
 
@@ -55,43 +24,9 @@
             instance._group = options.categorySelected; //(options && options.groupKey) ? Data.resolveGroupReference(options.groupKey) : Data.groups.getAt(0);
             element.querySelector("header[role=banner] .pagetitle").textContent = instance._group.title;
 
-
-            // Set up the ListView.
-            instance._items = new WinJS.Binding.List(); //Data.getItemsFromGroup(this._group);
+            instance._items = NewSum.groups[options.categorySelected.key].bindingList; //Data.getItemsFromGroup(this._group);
 
 
-            // These three strings encode placeholder images. You will want to set the
-            // backgroundImage property in your real data to be URLs to images.
-            var darkGray = "../../images/logo_read.jpg";
-            var lightGray = "../../images/logoTemp.jpg";
-            var mediumGray = "../../images/logoTemp.jpg";
-
-            var latestNews = null;
-            NewSum.categories.forEach(function (item, index) {
-                if (item.key == instance._group.key) {
-                    latestNews = item.articles;
-                    return false; //stop iteration;
-                }
-            });
-
-
-            for (var i = 0; i < latestNews.length; i++) {
-                var a = latestNews[i];
-
-                var content = "";
-                for (var j = 0; j < a.SummarySentences.length; j++) {
-                    var s = a.SummarySentences[j];
-                    content += s.Text + "<br/>";
-                }
-                instance._items.push({
-                    id: a._id,
-                    title: a.Title,
-                    subtitle: getTimeElapsed(a.milliseconds),
-                    description: "",
-                    content: content,
-                    backgroundImage: lightGray
-                });
-            }
 
 
             listView.itemDataSource = this._items.dataSource;
@@ -116,6 +51,9 @@
                 // appear in the ListView.
                 listView.selection.set(Math.max(this._itemSelectionIndex, 0));
             }
+
+            NewSum.FetchOlderArticles(options.categorySelected.key);
+
         },
 
         unload: function () {
