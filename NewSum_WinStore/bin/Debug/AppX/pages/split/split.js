@@ -6,7 +6,7 @@
     var nav = WinJS.Navigation;
     var ui = WinJS.UI;
     var utils = WinJS.Utilities;
-    var getTimeElapsed = function (milliseconds) {
+    var getTimeElapsed = function(milliseconds) {
         var minutes = ((new Date()) - new Date(milliseconds)) / (1000.0 * 60);
 
         if (minutes < 5) {
@@ -14,7 +14,7 @@
         }
 
         if (minutes < 60) {
-            return  Math.round(minutes) + " λεπτά πριν";
+            return Math.round(minutes) + " λεπτά πριν";
         }
 
         var hours = minutes / 60;
@@ -30,13 +30,14 @@
 
         if (days < 1) {
             return "πριν 1 μέρα";
-        }
-        else {
+        } else {
             return Math.round(days) + " μέρες πριν";
         }
 
-    };
-    
+    },
+        fetchRestOfTheArticles = function(categName) {
+        };
+
     ui.Pages.define("/pages/split/split.html", {
 
         /// <field type="WinJS.Binding.List" />
@@ -91,8 +92,6 @@
                     backgroundImage: lightGray
                 });
             }
-
-         
 
 
             listView.itemDataSource = this._items.dataSource;

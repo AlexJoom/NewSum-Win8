@@ -15,6 +15,7 @@
     var world = "../../images/earth.png";
     var tech = "../../images/petri-dishes_w725_h498.jpg";
     var various = "../../images/3591481091_6f63ecfd4e_q.jpg";
+    var money = "../../images/6355360253_30e095425d_n.jpg";
 
     // These three strings encode placeholder images. You will want to set the
     // backgroundImage property in your real data to be URLs to images.
@@ -28,7 +29,7 @@
         { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "...", articles: [], backgroundImage: athletics },
         { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "...", articles: [], backgroundImage: culture },
         { key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", articles: [], backgroundImage: tech },
-         { key: "Οικονομία", title: "Οικονομία", subtitle: "...", articles: [], backgroundImage: various },
+         { key: "Οικονομία", title: "Οικονομία", subtitle: "...", articles: [], backgroundImage: money },
         { key: "Γενικά", title: "Γενικά", subtitle: "...", articles: [], backgroundImage: various }
     ];
 
@@ -54,7 +55,13 @@
     });
 
 
-    //NewSum.articles = new WinJS.Binding.List();
+    NewSum.articles = new WinJS.Binding.List();
+
+    NewSum.GetNewArticles = function (categoryName) {
+        
+        //get 
+
+    };
     //var mongoUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&s={%22milliseconds%22:-1}&l=500";
     //WinJS.xhr({ url: mongoUrl }).done(
     //    function (response) {

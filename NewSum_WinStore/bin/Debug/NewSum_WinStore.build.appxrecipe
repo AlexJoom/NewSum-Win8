@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\3591481091_6f63ecfd4e_q.jpg">
       <PackagePath>images\3591481091_6f63ecfd4e_q.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\6355360253_30e095425d_n.jpg">
+      <PackagePath>images\6355360253_30e095425d_n.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\basketball_middle.jpg">
       <PackagePath>images\basketball_middle.jpg</PackagePath>
     </AppxPackagedFile>
