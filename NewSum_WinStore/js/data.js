@@ -30,7 +30,7 @@
         { key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "...", backgroundImage: athletics },
         { key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "...", backgroundImage: culture },
         { key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", backgroundImage: tech },
-         { key: "Οικονομία", title: "Οικονομία", subtitle: "...", backgroundImage: money },
+        { key: "Οικονομία", title: "Οικονομία", subtitle: "...", backgroundImage: money },
         { key: "Γενικά", title: "Γενικά", subtitle: "...", backgroundImage: various }
     ];
 
@@ -48,6 +48,7 @@
     WinJS.xhr({ url: latestNews }).done(function (response) {
         var latest = JSON.parse(response.responseText);
 
+
         NewSum.categories.forEach(function (item, index) {
             var ctx = Enumerable.From(latest).First(function (i) {
                 return i.CategoryName == item.key;
@@ -60,8 +61,7 @@
                 NewSum.groups[ctx.CategoryName].bindingList.push(getBindingObject(a));
             });
 
-
-
+            NewSum.groups[ctx.CategoryName].initiated = true;
         });
     });
 
@@ -69,22 +69,22 @@
 
     NewSum.FetchOlderArticles = function (categoryName, loadingCallBack, FinishedCallback) {
 
-        if (NewSum.groups[categoryName].fetchedData == undefined) {
+        if (NewSum.groups[categoryName].initiated && NewSum.groups[categoryName].fetchedData == undefined) {
             var blist = NewSum.groups[categoryName].bindingList;
-            var oldestArticleFound = blist.getItem(blist.length - 1).data;
-            var getOldestUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&q={\"CategoryName\":\"{0}\",\"milliseconds\":{$lt:{1}}}}&s={\"milliseconds\":-1}&l=200".replace("{0}", encodeURIComponent(categoryName)).replace("{1}", oldestArticleFound.milliseconds);
-            var promise = WinJS.xhr({ url: getOldestUrl });
+            if (blist.length > 0) {
+                var oldestArticleFound = blist.getItem(blist.length - 1).data;
+                var getOldestUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&q={\"CategoryName\":\"{0}\",\"milliseconds\":{$lt:{1}}}}&s={\"milliseconds\":-1}&l=200".replace("{0}", encodeURIComponent(categoryName)).replace("{1}", oldestArticleFound.milliseconds);
+                var promise = WinJS.xhr({ url: getOldestUrl });
 
-            promise.done(function (response) {
-                var list = JSON.parse(response.responseText);
-                list.forEach(function (a, index) {
-                    NewSum.groups[categoryName].bindingList.push(getBindingObject(a));
+                promise.done(function (response) {
+                    var list = JSON.parse(response.responseText);
+                    list.forEach(function (a, index) {
+                        NewSum.groups[categoryName].bindingList.push(getBindingObject(a));
+                    });
+                    NewSum.groups[categoryName].fetchedData = 1;
                 });
-                NewSum.groups[categoryName].fetchedData = 1;
-            });
-            return promise;
+            }
         }
-
     };
 
 
