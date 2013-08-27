@@ -7,9 +7,9 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="85631ca2-4c5f-4149-954d-ba7cf9841971" Version="0.1.0.0" Publisher="CN=Alx" ProcessorArchitecture="neutral" />
+  <Identity Name="151AlexandrosTzoumas.NewSum" Version="0.7.0.0" Publisher="CN=6CDF6AF2-D198-4433-9005-70865A6BC65F" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>NewSum_WinStore</DisplayName>
+    <DisplayName>NewSum</DisplayName>
     <PublisherDisplayName>Alexandros Tzoumas</PublisherDisplayName>
     <Logo>images\logos\store\50.png</Logo>
   </Properties>
@@ -22,7 +22,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="NewSum" Logo="images\logos\logo\150.fw.png" SmallLogo="images\logos\small\30.png" Description="Το newSum είναι μια εφαρμογή που δημιουργεί περιλήψεις των ειδήσεων από πολλές πηγές σε ένα ενιαίο κείμενο! Πρόκειται για ένα ευφυές κολάζ από όλες τις διαφορετικές πληροφορίες που θα είχατε αν διαβάζατε όλα τα άρθρα, από όλες τις πηγές (αν και όταν θα είχατε το χρόνο!).Το newSum αξιοποιεί κορυφαία τεχνολογία τεχνητής νοημοσύνης  για να κάνει σύνοψη πληροφοριών, ξεχωρίζοντας τα πράγματα που διαφέρουν από τον πλεονασμό. Είναι υλοποιημένο απο την μη κερδοσκοπική οργάνωση http://ww.scify.org, ενώ το γραφικό περιβάλλον για windows 8 έγινε απο τον Αλέξανδρο Τζούμα (@AlxJoom)" ForegroundText="dark" BackgroundColor="transparent">
+      <VisualElements DisplayName="NewSum | Οι ειδήσεις...περιληπτικά" Logo="images\logos\logo\150.fw.png" SmallLogo="images\logos\small\30.png" Description="Το newSum είναι μια εφαρμογή που δημιουργεί περιλήψεις των ειδήσεων από πολλές πηγές σε ένα ενιαίο κείμενο! Πρόκειται για ένα ευφυές κολάζ από όλες τις διαφορετικές πληροφορίες που θα είχατε αν διαβάζατε όλα τα άρθρα, από όλες τις πηγές (αν και όταν θα είχατε το χρόνο!).Το newSum αξιοποιεί κορυφαία τεχνολογία τεχνητής νοημοσύνης  για να κάνει σύνοψη πληροφοριών, ξεχωρίζοντας τα πράγματα που διαφέρουν από τον πλεονασμό. Είναι υλοποιημένο απο την μη κερδοσκοπική οργάνωση http://ww.scify.org, ενώ το γραφικό περιβάλλον για windows 8 έγινε απο τον Αλέξανδρο Τζούμα (@AlxJoom)" ForegroundText="dark" BackgroundColor="transparent">
         <DefaultTile ShowName="allLogos" ShortName="NewSum" WideLogo="images\logos\wide\310x150.png" />
         <SplashScreen Image="images\logos\splashscreen\620x300.png" BackgroundColor="white" />
         <InitialRotationPreference>
@@ -38,7 +38,7 @@
     <Capability Name="internetClient" />
   </Capabilities>
   <Dependencies>
-    <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20602" />
+    <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20789" />
   </Dependencies>
   <build:Metadata>
     <build:Item Name="VisualStudio" Version="11.0" />

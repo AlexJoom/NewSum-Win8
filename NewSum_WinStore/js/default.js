@@ -42,7 +42,7 @@
         app.sessionState.history = nav.history;
     };
 
-    //TODO: not sure where we should use this  (saw it at pluralsight)
+   
     app.addEventListener("resuming", function () {
 
 

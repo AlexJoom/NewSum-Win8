@@ -5,18 +5,18 @@
     <WindowsUser>Alx</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>9E9EE71DF9C121337FBB93EC68F090E88D0AD8492C71D01BE798E3EB291B2A1B</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>85631ca2-4c5f-4149-954d-ba7cf9841971_0.1.0.0_neutral__xqsafypvtnfgy</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>85631ca2-4c5f-4149-954d-ba7cf9841971_xqsafypvtnfgy!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>85631ca2-4c5f-4149-954d-ba7cf9841971</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Alx</RegisteredPackagePublisher>
-    <RegisteredVersion>0.1.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>34C684EC63849A4B6503E152ED1ACD0F7AB3A8674B56AEA26B90B63EEA8188FF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.7.0.0_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>151AlexandrosTzoumas.NewSum_nnbevzxmd4rbp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>151AlexandrosTzoumas.NewSum</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=6CDF6AF2-D198-4433-9005-70865A6BC65F</RegisteredPackagePublisher>
+    <RegisteredVersion>0.7.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-08-22T20:55:37.435</Modified>
+      <Modified>2013-08-27T19:55:41.451</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -30,7 +30,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
-      <Modified>2013-08-18T09:30:56.411</Modified>
+      <Modified>2013-08-27T20:24:13.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\3499502280_a1a8ce4474_q.jpg">
       <PackagePath>images\3499502280_a1a8ce4474_q.jpg</PackagePath>
@@ -216,11 +216,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-08-25T14:47:38.144</Modified>
+      <Modified>2013-08-27T20:22:46.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-08-17T18:44:12.751</Modified>
+      <Modified>2013-08-27T19:49:06.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -232,7 +232,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.js">
       <PackagePath>pages\split\split.js</PackagePath>
-      <Modified>2013-08-25T14:41:28.695</Modified>
+      <Modified>2013-08-27T20:08:25.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\Scripts\linq-vsdoc.js">
       <PackagePath>Scripts\linq-vsdoc.js</PackagePath>
@@ -252,11 +252,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
-      <Modified>2013-08-02T15:56:37.904</Modified>
+      <Modified>2013-08-27T19:52:27.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
-      <Modified>2013-08-19T22:29:30.621</Modified>
+      <Modified>2013-08-27T20:23:16.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\default.html">
       <PackagePath>default.html</PackagePath>
@@ -264,15 +264,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-08-22T20:55:36.277</Modified>
+      <Modified>2013-08-27T19:55:40.592</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
       <Name>Microsoft.WinJS.1.0</Name>
-      <Version>1.0.9200.20602</Version>
+      <Version>1.0.9200.20789</Version>
       <Architecture>Neutral</Architecture>
-      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20789</FrameworkIdentity>
       <AppxLocation>C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
     </ResolvedSDKReference>
   </ItemGroup>

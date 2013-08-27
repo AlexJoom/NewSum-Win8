@@ -88,8 +88,7 @@
     };
 
 
-
-    var getTimeElapsed = function (milliseconds) {
+    var getTimeElapsed = function(milliseconds) {
         var minutes = ((new Date()) - new Date(milliseconds)) / (1000.0 * 60);
 
         if (minutes < 5) {
@@ -118,7 +117,7 @@
         }
 
     },
-        getSummaryText = function (a) {
+        getSummaryText = function(a) {
             var content = "";
             for (var j = 0; j < a.SummarySentences.length; j++) {
                 var s = a.SummarySentences[j];
@@ -126,7 +125,18 @@
             }
             return content;
         },
-        getBindingObject = function (a) {
+        getArticleSources = function (a) {
+            var sources = [];
+            a.Sources.forEach(function (s, index) {
+               
+                var link = '<a href="'+s.SourceUrl+'" >'+s.sourceName+'</a>';
+                sources.push(link);
+
+            });
+            return sources.join('&nbsp;');
+
+        },
+    getBindingObject = function (a) {
             return {
                 id: a._id,
                 title: a.Title,
@@ -134,7 +144,8 @@
                 milliseconds: a.milliseconds,
                 description: "",
                 content: getSummaryText(a),
-                backgroundImage: lightGray
+                backgroundImage: lightGray,
+                articleSources: getArticleSources(a)
             };
         };
 

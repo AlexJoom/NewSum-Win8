@@ -47,7 +47,9 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>el-gr</DefaultLanguage>
-    <PackageCertificateKeyFile>NewSum_WinStore_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>NewSum_WinStore_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>15052F49AF42B8ADF3F2EDC9B1C9FBDA56B9B71D</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -97,6 +99,8 @@
     <Content Include="js\data.js" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="NewSum_WinStore_StoreKey.pfx" />
     <Content Include="packages.config" />
     <Content Include="pages\items\items.css" />
     <Content Include="pages\items\items.html" />

@@ -59,6 +59,7 @@
         unload: function () {
             //todo: restore this;
             //    this._items.dispose();
+            var x = "test";
         },
 
         // This function updates the page layout in response to viewState changes.

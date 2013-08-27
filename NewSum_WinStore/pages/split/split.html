@@ -11,20 +11,20 @@
 
     <link href="/css/default.css" rel="stylesheet" />
     <link href="/pages/split/split.css" rel="stylesheet" />
-    <script src="/js/data.js"></script>
+    <!--    <script src="/js/data.js"></script>-->
     <script src="/pages/split/split.js"></script>
 </head>
 <body>
     <!-- This template is used to display each item in the ListView declared below. -->
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <div class="item">
-            <img class="item-image"  src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
             <div class="item-info">
-                <h3 class="item-title" >
-					<span class="title" data-win-bind="textContent: title"></span>
-					<span class="item-subtitle">(<span data-win-bind="textContent: subtitle" ></span>)</span>
-				</h3>
-              <!--  <h6 class="item-subtitle win-type-ellipsis" ></h6> -->
+                <h3 class="item-title">
+                    <span class="title" data-win-bind="textContent: title"></span>
+                    <span class="item-subtitle">(<span data-win-bind="textContent: subtitle"></span>)</span>
+                </h3>
+                <!--  <h6 class="item-subtitle win-type-ellipsis" ></h6> -->
             </div>
         </div>
     </div>
@@ -38,8 +38,13 @@
             </h1>
         </header>
         <div class="itemlistsection" aria-label="List column">
-            <div class="itemlist win-selectionstylefilled" aria-label="List of this group's items" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'single', swipeBehavior: 'none', tapBehavior: 'toggleSelect' }"></div>
+            <div class="itemlist win-selectionstylefilled"
+                aria-label="List of this group's items"
+                data-win-control="WinJS.UI.ListView"
+                data-win-options="{ selectionMode: 'single', swipeBehavior: 'none', tapBehavior: 'toggleSelect' }">
+            </div>
         </div>
+
         <div class="articlesection" aria-atomic="true" aria-label="Item detail column" aria-live="assertive">
             <article>
                 <header class="header">
@@ -50,6 +55,12 @@
                     <!--<img style="display:none;" class="article-image" src="#" data-win-bind="src: backgroundImage; alt: title" />-->
                 </header>
                 <div class="article-content" data-win-bind="innerHTML: content"></div>
+                
+                <div class="article-sources">
+                    Πηγές: 
+                    <span data-win-bind="innerHTML: articleSources"></span>    
+                </div>
+                
             </article>
         </div>
     </div>
