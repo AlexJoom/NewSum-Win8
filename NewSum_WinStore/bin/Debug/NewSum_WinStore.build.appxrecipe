@@ -16,6 +16,9 @@
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\about\about.css">
+      <PackagePath>pages\about\about.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.css">
       <PackagePath>pages\items\items.css</PackagePath>
     </AppxPackagedFile>
@@ -173,6 +176,9 @@
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\about\about.js">
+      <PackagePath>pages\about\about.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
     </AppxPackagedFile>
@@ -190,6 +196,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\packages.config">
       <PackagePath>packages.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\about\about.html">
+      <PackagePath>pages\about\about.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>

@@ -58,6 +58,7 @@
             item.subtitle = "(" + ctx.TotalToday + " " + newLabel + ")";
 
             ctx.Articles.forEach(function (a, i) {
+
                 NewSum.groups[ctx.CategoryName].bindingList.push(getBindingObject(a));
             });
 
@@ -88,7 +89,7 @@
     };
 
 
-    var getTimeElapsed = function(milliseconds) {
+    var getTimeElapsed = function (milliseconds) {
         var minutes = ((new Date()) - new Date(milliseconds)) / (1000.0 * 60);
 
         if (minutes < 5) {
@@ -117,7 +118,7 @@
         }
 
     },
-        getSummaryText = function(a) {
+        getSummaryText = function (a) {
             var content = "";
             for (var j = 0; j < a.SummarySentences.length; j++) {
                 var s = a.SummarySentences[j];
@@ -128,8 +129,8 @@
         getArticleSources = function (a) {
             var sources = [];
             a.Sources.forEach(function (s, index) {
-               
-                var link = '<a href="'+s.SourceUrl+'" >'+s.sourceName+'</a>';
+
+                var link = '<a href="' + s.SourceUrl + '" >' + s.sourceName + '</a>';
                 sources.push(link);
 
             });
@@ -137,17 +138,17 @@
 
         },
     getBindingObject = function (a) {
-            return {
-                id: a._id,
-                title: a.Title,
-                subtitle: getTimeElapsed(a.milliseconds),
-                milliseconds: a.milliseconds,
-                description: "",
-                content: getSummaryText(a),
-                backgroundImage: lightGray,
-                articleSources: getArticleSources(a)
-            };
+        return {
+            id: a._id,
+            title: a.Title,
+            subtitle: getTimeElapsed(a.milliseconds),
+            milliseconds: a.milliseconds,
+            description: "",
+            content: getSummaryText(a),
+            backgroundImage: lightGray,
+            articleSources: getArticleSources(a)
         };
+    };
 
 
 

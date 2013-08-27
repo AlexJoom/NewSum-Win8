@@ -1,0 +1,22 @@
+﻿.about section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#version {
+    font-size: 16pt;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .about section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .about section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

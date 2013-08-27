@@ -54,6 +54,7 @@
 
             NewSum.FetchOlderArticles(options.categorySelected.key);
 
+           
         },
 
         unload: function () {
@@ -131,12 +132,18 @@
                     if (this._isSingleColumn()) {
                         // If snapped or portrait, navigate to a new page containing the
                         // selected item's details.
-                        nav.navigate("/pages/split/split.html", { groupKey: this._group.key, selectedIndex: this._itemSelectionIndex });
+                        nav.navigate("/pages/split/split.html", { categorySelected: this._group.key, selectedIndex: this._itemSelectionIndex });
                     } else {
                         // If fullscreen or filled, update the details column with new data.
                         details = document.querySelector(".articlesection");
                         binding.processAll(details, items[0].data);
                         details.scrollTop = 0;
+
+                        //var x = document.body.querySelectorAll(".article-sources a");
+                        //for (var i = 0; i < x.length; i++) {
+                        //    var a = x[i];
+                        //    a.setAttribute("target", "externalSource");
+                        //}                    
                     }
                 }
             }.bind(this));

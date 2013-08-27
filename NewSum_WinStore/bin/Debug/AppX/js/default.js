@@ -31,6 +31,10 @@
                 }
             }));
 
+            document.getElementById("cmdAbout").addEventListener("click",function () {
+                nav.navigate("/pages/about/about.html");
+            });
+
         }
     });
 
