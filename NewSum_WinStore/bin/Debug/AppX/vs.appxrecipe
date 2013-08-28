@@ -5,18 +5,18 @@
     <WindowsUser>Alx</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>34C684EC63849A4B6503E152ED1ACD0F7AB3A8674B56AEA26B90B63EEA8188FF</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.7.0.0_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>67295FE1111C52C50254D6ACCAF280B9A4282002F6EFDC487A62B6570FA7B41E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.7.0.1_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>151AlexandrosTzoumas.NewSum_nnbevzxmd4rbp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>151AlexandrosTzoumas.NewSum</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=6CDF6AF2-D198-4433-9005-70865A6BC65F</RegisteredPackagePublisher>
-    <RegisteredVersion>0.7.0.0</RegisteredVersion>
+    <RegisteredVersion>0.7.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-08-27T21:08:21.579</Modified>
+      <Modified>2013-08-28T21:01:57.600</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -260,7 +260,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\about\about.html">
       <PackagePath>pages\about\about.html</PackagePath>
-      <Modified>2013-08-27T22:03:30.683</Modified>
+      <Modified>2013-08-28T21:11:43.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
@@ -276,7 +276,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-08-27T21:08:21.057</Modified>
+      <Modified>2013-08-28T21:01:57.001</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
