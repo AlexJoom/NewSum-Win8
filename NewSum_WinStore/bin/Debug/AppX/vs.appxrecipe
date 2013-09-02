@@ -5,7 +5,7 @@
     <WindowsUser>Alx</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>67295FE1111C52C50254D6ACCAF280B9A4282002F6EFDC487A62B6570FA7B41E</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>FB1D992DF9CEED0705B17F96AF2246E43491FD3C3BF49E4B7C6BE4F14BA07024</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.7.0.1_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>151AlexandrosTzoumas.NewSum_nnbevzxmd4rbp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>151AlexandrosTzoumas.NewSum</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-08-28T21:01:57.600</Modified>
+      <Modified>2013-09-02T20:31:09.882</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -220,7 +220,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-08-27T20:48:01.940</Modified>
+      <Modified>2013-09-02T20:11:34.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -236,7 +236,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
-      <Modified>2013-08-19T22:29:33.005</Modified>
+      <Modified>2013-09-02T20:29:53.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.js">
       <PackagePath>pages\split\split.js</PackagePath>
@@ -260,7 +260,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\about\about.html">
       <PackagePath>pages\about\about.html</PackagePath>
-      <Modified>2013-08-28T21:11:43.955</Modified>
+      <Modified>2013-08-28T21:15:17.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
@@ -276,7 +276,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-08-28T21:01:57.001</Modified>
+      <Modified>2013-09-02T20:31:09.363</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -21,9 +21,9 @@
     // These three strings encode placeholder images. You will want to set the
     // backgroundImage property in your real data to be URLs to images.
     var darkGray = "../../images/logo_read.jpg";
-    var lightGray = "../../images/logoTemp.jpg";
+    var lightGray = "../../images/logos/small/30.scale-100.png";
     var mediumGray = "../../images/logoTemp.jpg";
-
+    
     var categories = [
         { key: "Κόσμος", title: "Κόσμος", subtitle: "...", backgroundImage: world },
         { key: "Ελλάδα", title: "Ελλάδα", subtitle: "...", backgroundImage: greece },

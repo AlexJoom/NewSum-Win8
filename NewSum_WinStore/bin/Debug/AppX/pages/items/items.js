@@ -7,11 +7,10 @@
     ui.Pages.define("/pages/items/items.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
-        ready: function (element, options) {
+        ready: function (element, options) {            
             
-          ///  WinJS.Utilities.markSupportedForProcessing(NewSum.millisecondsToDateTime);
-            
-
+           
+            this._checkForInternetConnectivity();
             var listView = element.querySelector(".itemslist").winControl;
             listView.itemDataSource = NewSum.categories.dataSource;
             listView.itemTemplate = element.querySelector(".itemtemplate");
@@ -41,7 +40,22 @@
                 }
             }
         },
-        // This function updates the ListView with new layouts
+        _checkForInternetConnectivity: function () {
+            var internetConnectionProfile = Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile();
+            if (internetConnectionProfile.getNetworkConnectivityLevel() !=
+                        Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess) {
+
+                var dialog = new Windows.UI.Popups.MessageDialog("Δεν είστε συνδεδεμένοι στο internet. Η εφαρμογή θα κλείσει...", "Ώπα!");
+                dialog.commands.append(new Windows.UI.Popups.UICommand("Κλείσιμο", function () {
+                    window.close();
+                }));
+                dialog.defaultCommandIndex = 0;// Set the command that will be invoked by default
+                dialog.cancelCommandIndex = 0;// Set the command to be invoked when escape is pressed
+                dialog.showAsync();
+
+            }
+        },
+            // This function updates the ListView with new layouts
         _initializeLayout: function (listView, viewState) {
             /// <param name="listView" value="WinJS.UI.ListView.prototype" />
             if (viewState === appViewState.snapped) {

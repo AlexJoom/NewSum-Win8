@@ -26,9 +26,7 @@
         <DefaultTile ShowName="allLogos" ShortName="NewSum" WideLogo="images\logos\wide\310x150.png" />
         <SplashScreen Image="images\logos\splashscreen\620x300.png" BackgroundColor="white" />
         <InitialRotationPreference>
-          <Rotation Preference="portrait" />
           <Rotation Preference="landscape" />
-          <Rotation Preference="portraitFlipped" />
           <Rotation Preference="landscapeFlipped" />
         </InitialRotationPreference>
       </VisualElements>
