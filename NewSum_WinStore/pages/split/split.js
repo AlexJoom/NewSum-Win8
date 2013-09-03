@@ -21,6 +21,10 @@
 
             var instance = this;
             // Store information about the group and selection that this page will display.
+            if (options.groupKey) {
+                options.categorySelected = { key: options.groupKey, title: options.groupKey };
+            }
+
             instance._group = options.categorySelected; //(options && options.groupKey) ? Data.resolveGroupReference(options.groupKey) : Data.groups.getAt(0);
             element.querySelector("header[role=banner] .pagetitle").textContent = instance._group.title;
             
