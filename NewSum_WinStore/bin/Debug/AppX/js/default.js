@@ -9,6 +9,8 @@
     var activation = Windows.ApplicationModel.Activation;
     var nav = WinJS.Navigation;
 
+    Windows.Storage.ApplicationData.current.localSettings;
+
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -18,7 +20,7 @@
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }
-
+            
             if (app.sessionState.history) {
                 nav.history = app.sessionState.history;
             }

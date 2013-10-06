@@ -23,7 +23,7 @@
     var darkGray = "../../images/logo_read.jpg";
     var lightGray = "../../images/logos/small/30.scale-100.png";
     var mediumGray = "../../images/logoTemp.jpg";
-    
+
     var categories = [
         { key: "Κόσμος", title: "Κόσμος", subtitle: "...", backgroundImage: world },
         { key: "Ελλάδα", title: "Ελλάδα", subtitle: "...", backgroundImage: greece },
@@ -44,7 +44,31 @@
         NewSum.categories.push(WinJS.Binding.as(item));
     });
 
-    var latestNews = "https://api.mongolab.com/api/1/databases/newsum/collections/latestnews?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco";
+    var collectionNameForLatestNews = "latestnews";
+    var collectionNameForArticles = "articles";
+
+    NewSum.GetLanguage = function () {
+        var lang = Windows.Storage.ApplicationData.current.localSettings.values["language"];
+
+        if (!lang) {
+            var languages = Windows.Globalization.ApplicationLanguages.languages; 
+            if (languages[0] == "el")
+                lang = "el-gr";
+            else
+                lang = "en-us";
+
+            NewSum.SetLanguage(lang);
+        }
+        return lang;
+    };
+
+    NewSum.SetLanguage = function (value) {
+        var s = Windows.Storage.ApplicationData.current.localSettings;
+        s.values["language"] = value;
+        //raise event;
+    };
+
+    var latestNews = "https://api.mongolab.com/api/1/databases/newsum/collections/" + collectionNameForLatestNews + "?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco";
     WinJS.xhr({ url: latestNews }).done(function (response) {
         var latest = JSON.parse(response.responseText);
 
@@ -74,7 +98,7 @@
             var blist = NewSum.groups[categoryName].bindingList;
             if (blist.length > 0) {
                 var oldestArticleFound = blist.getItem(blist.length - 1).data;
-                var getOldestUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/articles?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&q={\"CategoryName\":\"{0}\",\"milliseconds\":{$lt:{1}}}}&s={\"milliseconds\":-1}&l=200".replace("{0}", encodeURIComponent(categoryName)).replace("{1}", oldestArticleFound.milliseconds);
+                var getOldestUrl = "https://api.mongolab.com/api/1/databases/newsum/collections/" + collectionNameForArticles + "?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco&q={\"CategoryName\":\"{0}\",\"milliseconds\":{$lt:{1}}}}&s={\"milliseconds\":-1}&l=200".replace("{0}", encodeURIComponent(categoryName)).replace("{1}", oldestArticleFound.milliseconds);
                 var promise = WinJS.xhr({ url: getOldestUrl });
 
                 promise.done(function (response) {
@@ -87,6 +111,8 @@
             }
         }
     };
+
+
 
 
     var getTimeElapsed = function (milliseconds) {
@@ -137,64 +163,17 @@
             return sources.join('&nbsp;');
 
         },
-    getBindingObject = function (a) {
-        return {
-            id: a._id,
-            title: a.Title,
-            subtitle: getTimeElapsed(a.milliseconds),
-            milliseconds: a.milliseconds,
-            description: "",
-            content: getSummaryText(a),
-            backgroundImage: lightGray,
-            articleSources: getArticleSources(a)
+        getBindingObject = function (a) {
+            return {
+                id: a._id,
+                title: a.Title,
+                subtitle: getTimeElapsed(a.milliseconds),
+                milliseconds: a.milliseconds,
+                description: "",
+                content: getSummaryText(a),
+                backgroundImage: lightGray,
+                articleSources: getArticleSources(a)
+            };
         };
-    };
-
-
-
-    //var list = new WinJS.Binding.List();
-    //var groupedItems = list.createGrouped(
-    //    function groupKeySelector(item) { return item.group.key; },
-    //    function groupDataSelector(item) { return item.group; }
-    //);
-
-
-    //WinJS.Namespace.define("Data", {
-    //    items: groupedItems,
-    //    groups: groupedItems.groups,
-    //    getItemReference: getItemReference,
-    //    getItemsFromGroup: getItemsFromGroup,
-    //    resolveGroupReference: resolveGroupReference,
-    //    resolveItemReference: resolveItemReference
-    //});
-    //// Get a reference for an item, using the group key and Topic as a
-    //// unique reference to the item that can be easily serialized.
-    //function getItemReference(item) {
-    //    return [item.group.key, item.title];
-    //}
-    //// This function returns a WinJS.Binding.List containing only the items
-    //// that belong to the provided group.
-    //function getItemsFromGroup(group) {
-    //    return list.createFiltered(function (item) { return item.group.key === group.key; });
-    //}
-    //// Get the unique group corresponding to the provided group key.
-    //function resolveGroupReference(key) {
-    //    for (var i = 0; i < groupedItems.groups.length; i++) {
-    //        if (groupedItems.groups.getAt(i).key === key) {
-    //            return groupedItems.groups.getAt(i);
-    //        }
-    //    }
-    //}
-    //// Get a unique item from the provided string array, which should contain a
-    //// group key and an Topic.
-    //function resolveItemReference(reference) {
-    //    for (var i = 0; i < groupedItems.length; i++) {
-    //        var item = groupedItems.getAt(i);
-    //        if (item.group.key === reference[0] && item.title === reference[1]) {
-    //            return item;
-    //        }
-    //    }
-    //}
-
 })();
 
