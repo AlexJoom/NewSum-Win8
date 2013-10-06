@@ -18,24 +18,14 @@
 </head>
 <body>
     <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/items/items.html'}"></div>
-    
-    <div data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'privacy', width:'narrow'}">
-        <div class="win-ui-dark win-header">
-            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
-            <div class="win-label">Privacy Policy</div>
-        </div>
-        <div class="win-content win-settings-section">
-            Το NewSum δεν καταγράφει ούτε χρησιμοποιεί προσωπικά δεδομένα των χρηστών του.
-            <br/>
-            Σε περίπτωση αλλαγής της Πολιτικής Απορρήτου θα υπάρξει αντίστοιχη ενήμερωση.
-        </div>
-    </div>
-
     <div id="appbar" data-win-control="WinJS.UI.AppBar" data-win-options="" style="visibility: hidden;">
         <button data-win-control="WinJS.UI.AppBarCommand"
-             data-win-options="{id:'cmdAbout',label:'Σχετικά',icon:'people',section:'global',type:'button', tooltip:''}">
+                data-win-options="{id:'cmdAbout',label:'Σχετικά',icon:'people',section:'global',type:'button', tooltip:''}">
         </button>
-<!--         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdContact',label:'Contact',icon:'accounts',section:'global',tooltip:''}">
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdSettings',label:'Ρυθμίσεις',icon:'settings',section:'global',type:'button', tooltip:''}">
+        </button>
+        <!--         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdContact',label:'Contact',icon:'accounts',section:'global',tooltip:''}">
         </button>
         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdDonate',label:'Help us!',icon:'touchpointer',section:'global',tooltip:''}">
         </button>-->

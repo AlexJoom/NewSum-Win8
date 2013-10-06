@@ -18,7 +18,7 @@
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }
-            
+
             if (app.sessionState.history) {
                 nav.history = app.sessionState.history;
             }
@@ -31,8 +31,13 @@
                 }
             }));
 
-            document.getElementById("cmdAbout").addEventListener("click",function () {
+            document.getElementById("cmdAbout").addEventListener("click", function () {
                 nav.navigate("/pages/about/about.html");
+            });
+
+            document.getElementById("cmdSettings").addEventListener("click", function () {
+                WinJS.UI.SettingsFlyout.showSettings("settings", "/pages/settings/settings.html");
+
             });
 
         }
@@ -46,7 +51,14 @@
         app.sessionState.history = nav.history;
     };
 
-   
+    app.onsettings = function (e) {
+        e.detail.applicationcommands = {
+            "privacy": { title: "Privacy Policy", href: "/pages/privacyPolicy/privacypolicy.html" },
+            "settings": { title: "Change Language", href: "/pages/settings/settings.html" }
+        };
+        WinJS.UI.SettingsFlyout.populateSettings(e);
+    };
+
     app.addEventListener("resuming", function () {
 
 

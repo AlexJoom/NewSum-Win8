@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>settings</title>
+
+    <link href="settings.css" rel="stylesheet" />
+    <script src="settings.js"></script>
+</head>
+<body>
+    <div id="settings"  data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'settings', width:'narrow'}">
+        <div class="win-ui-dark win-header">
+            <button type="button" id="close-settings"  class="win-backbutton"></button>
+            <div class="win-label">Settings</div>
+        </div>
+         <div class="win-content win-settings-section">
+              <h3>Change language</h3>
+             <input type="radio" name="language" value="en-us"/><label>English</label>
+             <br />
+             <input type="radio" name="language" value="el-gr"/><label>Greek</label>
+             
+         </div>
+    </div>
+</body>
+</html>

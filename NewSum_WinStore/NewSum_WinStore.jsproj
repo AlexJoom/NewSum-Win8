@@ -108,6 +108,12 @@
     <Content Include="pages\items\items.css" />
     <Content Include="pages\items\items.html" />
     <Content Include="pages\items\items.js" />
+    <Content Include="pages\privacyPolicy\privacypolicy.css" />
+    <Content Include="pages\privacyPolicy\privacypolicy.html" />
+    <Content Include="pages\privacyPolicy\privacypolicy.js" />
+    <Content Include="pages\settings\settings.css" />
+    <Content Include="pages\settings\settings.html" />
+    <Content Include="pages\settings\settings.js" />
     <Content Include="pages\split\split.css" />
     <Content Include="pages\split\split.html" />
     <Content Include="pages\split\split.js" />

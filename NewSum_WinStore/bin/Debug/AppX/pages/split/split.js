@@ -21,13 +21,14 @@
 
             var instance = this;
             // Store information about the group and selection that this page will display.
+            if (options.groupKey) {
+                options.categorySelected = { key: options.groupKey, title: options.groupKey };
+            }
+
             instance._group = options.categorySelected; //(options && options.groupKey) ? Data.resolveGroupReference(options.groupKey) : Data.groups.getAt(0);
             element.querySelector("header[role=banner] .pagetitle").textContent = instance._group.title;
-
+            
             instance._items = NewSum.groups[options.categorySelected.key].bindingList; //Data.getItemsFromGroup(this._group);
-
-
-
 
             listView.itemDataSource = this._items.dataSource;
             listView.itemTemplate = element.querySelector(".itemtemplate");
@@ -60,7 +61,6 @@
         unload: function () {
             //todo: restore this;
             //    this._items.dispose();
-            var x = "test";
         },
 
         // This function updates the page layout in response to viewState changes.
@@ -132,18 +132,13 @@
                     if (this._isSingleColumn()) {
                         // If snapped or portrait, navigate to a new page containing the
                         // selected item's details.
-                        nav.navigate("/pages/split/split.html", { categorySelected: this._group.key, selectedIndex: this._itemSelectionIndex });
+                        
+                        nav.navigate("/pages/split/split.html", { categorySelected: this._group, selectedIndex: this._itemSelectionIndex });
                     } else {
                         // If fullscreen or filled, update the details column with new data.
                         details = document.querySelector(".articlesection");
                         binding.processAll(details, items[0].data);
-                        details.scrollTop = 0;
-
-                        //var x = document.body.querySelectorAll(".article-sources a");
-                        //for (var i = 0; i < x.length; i++) {
-                        //    var a = x[i];
-                        //    a.setAttribute("target", "externalSource");
-                        //}                    
+                        details.scrollTop = 0;           
                     }
                 }
             }.bind(this));

@@ -5,18 +5,18 @@
     <WindowsUser>Alx</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>FB1D992DF9CEED0705B17F96AF2246E43491FD3C3BF49E4B7C6BE4F14BA07024</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.7.0.1_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>91C324EDB6D81EC44A78FDAA23C5C03AAA4D1888FCCAFF75E951BF016AF00584</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.7.0.7_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>151AlexandrosTzoumas.NewSum_nnbevzxmd4rbp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>151AlexandrosTzoumas.NewSum</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=6CDF6AF2-D198-4433-9005-70865A6BC65F</RegisteredPackagePublisher>
-    <RegisteredVersion>0.7.0.1</RegisteredVersion>
+    <RegisteredVersion>0.7.0.7</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-02T20:39:38.638</Modified>
+      <Modified>2013-10-06T21:32:10.328</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +31,14 @@
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.css">
       <PackagePath>pages\items\items.css</PackagePath>
       <Modified>2013-08-19T22:18:05.925</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\privacyPolicy\privacypolicy.css">
+      <PackagePath>pages\privacyPolicy\privacypolicy.css</PackagePath>
+      <Modified>2013-10-06T21:31:06.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\settings\settings.css">
+      <PackagePath>pages\settings\settings.css</PackagePath>
+      <Modified>2013-10-06T21:10:40.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
@@ -224,7 +232,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-08-27T21:41:22.315</Modified>
+      <Modified>2013-10-06T21:32:06.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -236,11 +244,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
-      <Modified>2013-09-02T20:29:53.058</Modified>
+      <Modified>2013-09-03T20:29:04.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\privacyPolicy\privacypolicy.js">
+      <PackagePath>pages\privacyPolicy\privacypolicy.js</PackagePath>
+      <Modified>2013-10-06T21:31:06.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\settings\settings.js">
+      <PackagePath>pages\settings\settings.js</PackagePath>
+      <Modified>2013-10-06T21:28:29.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.js">
       <PackagePath>pages\split\split.js</PackagePath>
-      <Modified>2013-08-27T20:59:51.061</Modified>
+      <Modified>2013-09-03T21:01:23.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\Scripts\linq-vsdoc.js">
       <PackagePath>Scripts\linq-vsdoc.js</PackagePath>
@@ -260,11 +276,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\about\about.html">
       <PackagePath>pages\about\about.html</PackagePath>
-      <Modified>2013-08-28T21:15:17.127</Modified>
+      <Modified>2013-09-03T20:38:25.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
       <Modified>2013-08-27T21:44:18.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\privacyPolicy\privacypolicy.html">
+      <PackagePath>pages\privacyPolicy\privacypolicy.html</PackagePath>
+      <Modified>2013-10-06T21:31:33.163</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\settings\settings.html">
+      <PackagePath>pages\settings\settings.html</PackagePath>
+      <Modified>2013-10-06T21:28:59.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
@@ -272,11 +296,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-08-27T21:31:45.557</Modified>
+      <Modified>2013-10-06T21:31:39.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-09-02T20:39:38.414</Modified>
+      <Modified>2013-10-06T21:32:09.900</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

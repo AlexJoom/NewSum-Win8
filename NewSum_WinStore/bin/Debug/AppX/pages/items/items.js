@@ -42,7 +42,7 @@
         },
         _checkForInternetConnectivity: function () {
             var internetConnectionProfile = Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile();
-            if (internetConnectionProfile.getNetworkConnectivityLevel() !=
+            if (internetConnectionProfile==null || internetConnectionProfile.getNetworkConnectivityLevel() !=
                         Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess) {
 
                 var dialog = new Windows.UI.Popups.MessageDialog("Δεν είστε συνδεδεμένοι στο internet. Η εφαρμογή θα κλείσει...", "Ώπα!");
