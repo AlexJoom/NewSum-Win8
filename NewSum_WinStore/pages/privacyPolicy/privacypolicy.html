@@ -11,13 +11,10 @@
     <div data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'privacy', width:'narrow'}">
         <div class="win-ui-dark win-header">
             <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
-            <div class="win-label">Privacy Policy</div>
+            <div class="win-label" data-win-res="{innerText: 'flyoutPrivacy'}" >Privacy Policy</div>
         </div>
-        <div class="win-content win-settings-section">
-            Το NewSum δεν καταγράφει ούτε χρησιμοποιεί προσωπικά δεδομένα των χρηστών του.
-            <br />
-            Σε περίπτωση αλλαγής της Πολιτικής Απορρήτου θα υπάρξει αντίστοιχη ενήμερωση.
-        </div>
+        <div class="win-content win-settings-section" data-win-res="{innerHTML:'privacy_body'}" >
+              </div>
     </div>
 
 </body>

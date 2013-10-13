@@ -7,10 +7,7 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-            // TODO: Initialize the page here.
-
-            // For an introduction to the Page Control template, see the following documentation:
-
+            WinJS.Resources.processAll();
             var z = Windows.ApplicationModel.Package.current.id.version;
             var elemen = document.getElementById("version");
             var versionNumber="v"+z.major + "." + z.minor + "."+ z.build + "." + z.revision;

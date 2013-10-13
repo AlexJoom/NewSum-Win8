@@ -1,0 +1,39 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    "appbarAbout"              : "Σχετικά",
+    "appBarSettings"           : "Ρυθμίσεις",
+    "flyoutPrivacy"            : "Πολιτική απορρήτου",
+    "flyoutSettings"           : "Αλλαγή γλώσσας",
+
+    "category_Economy"          :"Οικονομία",
+    "category_World"            :"Κόσμος",
+    "category_General"          :"Γενικά",
+    "category_Culture"          :"Πολιτισμός",
+    "category_Science"          :"Επιστήμη",
+    "category_Greece"           :"Ελλάδα",
+
+    "split_Sources"             : "Πηγές",
+
+    "settings_ChangeLang"       : "Αλλαγή γλώσσας",
+
+    "privacy_body"              : "Το NewSum δεν καταγράφει ούτε χρησιμοποιεί προσωπικά δεδομένα των χρηστών του.<br />Σε περίπτωση αλλαγής της Πολιτικής Απορρήτου θα υπάρξει αντίστοιχη ενήμερωση.",
+
+    "internetConnectivityCheck_Title"       :"Δεν είστε συνδεδεμένοι στο internet. Η εφαρμογή θα κλείσει...", 
+    "internetConnectivityCheck_Subtitle"    :"Ώπα!",
+    "internetConnectivityCheck_Close"       :"Κλείσιμο",
+
+    "about_mainSection"         : "Το NewSum είναι μια εφαρμογή που δημιουργεί περιλήψεις των ειδήσεων από πολλές πηγές σε ένα ενιαίο κείμενο!<br/>Πρόκειται για ένα ευφυές κολάζ από όλες τις διαφορετικές πληροφορίες που θα είχατε αν διαβάζατε όλα τα άρθρα,<br/>από όλες τις πηγές (αν και όταν θα είχατε το χρόνο!).<br/><br/>Το NewSum αξιοποιεί κορυφαία τεχνολογία τεχνητής νοημοσύνης  για να κάνει σύνοψη πληροφοριών, ξεχωρίζοντας τα πράγματα που διαφέρουν από τον πλεονασμό.<br/>Είναι υλοποιημένο απο την μη κερδοσκοπική οργάνωση <a href=\"http://www.scify.org\">SciFy</a> σε συνεργασία με το Ινστιτούτο Πληροφορικής & Τηλεπικοινωνιών του <a href=\"http://www.demokritos.gr/\">ΕΚΕΦΕ «Δημόκριτος»</a>,<br/>ενώ το γραφικό περιβάλλον για windows 8 έγινε απο τον  <a href=\"http://gr.linkedin.com/in/atzoumas/\">Αλέξανδρο Τζούμα</a> (<a href=\"https://twitter.com/AlxJoom\">@AlxJoom</a>)",
+    "about_sectionPrivacy"      :  "<h2>Προστασία Προσωπικών Δεδομένων (privacy policy)</h2>Το NewSum δε συλλέγει προσωπικά δεδομένα των επισκεπτών του.",
+    "about_sectionPhotos"       :  "Οι φωτογραφίες που εμφανίζονται στις κατηγορίες βρίσκονται στα ακόλουθα links:",
+
+    "new_single"                :"νέο",
+    "new_plural"                :"νέα",
+
+    "time_justnow"              : "μόλις τώρα",
+    "time_minutesago"           : " λεπτά πρίν",
+    "time_onehourago"           : "πριν 1 ώρα",
+    "time_hoursago"             : " ώρες πριν",
+    "time_onedayago"            : "πριν 1 μέρα",
+    "time_daysago"              : " μέρες πριν"
+}

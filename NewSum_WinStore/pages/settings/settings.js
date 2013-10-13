@@ -7,7 +7,7 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-
+            WinJS.Resources.processAll();
             document.getElementById("close-settings").addEventListener("click", closeSettings.bind(this));
             document.querySelector("input[value='" +  NewSum.GetLanguage() + "']").checked = true;
          

@@ -9,8 +9,6 @@
     var activation = Windows.ApplicationModel.Activation;
     var nav = WinJS.Navigation;
 
-    Windows.Storage.ApplicationData.current.localSettings;
-
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -20,7 +18,7 @@
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }
-            
+
             if (app.sessionState.history) {
                 nav.history = app.sessionState.history;
             }
@@ -32,6 +30,27 @@
                     return nav.navigate(Application.navigator.home);
                 }
             }));
+
+
+            var appbar = document.getElementById("appbar").winControl;
+            appbar.commands = [{
+                id: 'cmdAbout',
+                label: WinJS.Resources.getString('appbarAbout').value,
+                icon: 'people',
+                section: 'global',
+                type: 'button',
+                tooltip: ""
+            },
+            {
+                id: 'cmdSettings',
+                label: WinJS.Resources.getString('appBarSettings').value,
+                icon: 'settings',
+                section: 'global',
+                tooltip: ""
+            }];
+
+
+
 
             document.getElementById("cmdAbout").addEventListener("click", function () {
                 nav.navigate("/pages/about/about.html");
@@ -53,10 +72,13 @@
         app.sessionState.history = nav.history;
     };
 
+    app.onloaded = function () { //process all resource files
+        WinJS.Resources.processAll();
+    };
     app.onsettings = function (e) {
         e.detail.applicationcommands = {
-            "privacy": { title: "Privacy Policy", href: "/pages/privacyPolicy/privacypolicy.html" },
-            "settings": { title: "Change Language", href: "/pages/settings/settings.html" }
+            "privacy": { title: WinJS.Resources.getString('flyoutPrivacy'), href: "/pages/privacyPolicy/privacypolicy.html" },
+            "settings": { title: WinJS.Resources.getString('flyoutSettings'), href: "/pages/settings/settings.html" }
         };
         WinJS.UI.SettingsFlyout.populateSettings(e);
     };

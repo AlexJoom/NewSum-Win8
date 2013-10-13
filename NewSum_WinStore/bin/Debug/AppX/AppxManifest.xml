@@ -19,6 +19,7 @@
   </Prerequisites>
   <Resources>
     <Resource Language="EL-GR" />
+    <Resource Language="EN-US" />
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">

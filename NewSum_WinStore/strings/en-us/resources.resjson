@@ -1,0 +1,39 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    "appbarAbout"              : "About",
+    "appBarSettings"           : "Settings",
+    "flyoutPrivacy"            : "Privacy Policy",
+    "flyoutSettings"           : "Change language",
+
+    "category_Economy"          :"Economy",
+    "category_World"            :"World",
+    "category_General"          :"General",
+    "category_Culture"          :"Culture",
+    "category_Science"          :"Science",
+    "category_Greece"           :"Greece",
+
+    "split_Sources"             : "Sources",
+
+    "settings_ChangeLang"       : "Change language",
+
+    "privacy_body"              :"NewSum does not record, either uses personal information from its users",
+
+    "internetConnectivityCheck_Title"       :"You're not connected to the internet.App will now close...", 
+    "internetConnectivityCheck_Subtitle"    :"Oops!",
+    "internetConnectivityCheck_Close"       :"Close",
+
+    "about_mainSection"         : "Το NewSum είναι μια εφαρμογή που δημιουργεί περιλήψεις των ειδήσεων από πολλές πηγές σε ένα ενιαίο κείμενο!<br/>Πρόκειται για ένα ευφυές κολάζ από όλες τις διαφορετικές πληροφορίες που θα είχατε αν διαβάζατε όλα τα άρθρα,<br/>από όλες τις πηγές (αν και όταν θα είχατε το χρόνο!).<br/><br/>Το NewSum αξιοποιεί κορυφαία τεχνολογία τεχνητής νοημοσύνης  για να κάνει σύνοψη πληροφοριών, ξεχωρίζοντας τα πράγματα που διαφέρουν από τον πλεονασμό.<br/>Είναι υλοποιημένο απο την μη κερδοσκοπική οργάνωση <a href=\"http://www.scify.org\">SciFy</a> σε συνεργασία με το Ινστιτούτο Πληροφορικής & Τηλεπικοινωνιών του <a href=\"http://www.demokritos.gr/\">ΕΚΕΦΕ «Δημόκριτος»</a>,<br/>ενώ το γραφικό περιβάλλον για windows 8 έγινε απο τον  <a href=\"http://gr.linkedin.com/in/atzoumas/\">Αλέξανδρο Τζούμα</a> (<a href=\"https://twitter.com/AlxJoom\">@AlxJoom</a>)",
+    "about_sectionPrivacy"      :  "<h2>Privacy policy</h2>NewSum does not collect or use personal information from its users.",
+    "about_sectionPhotos"       :  "The category image's used in the app can be found in the following links:",
+
+    "new_single"                :"new",
+    "new_plural"                :"new",
+
+    "time_justnow"              : "just now",
+    "time_minutesago"           : " minutes ago",
+    "time_onehourago"           : "1 hour ago",
+    "time_hoursago"             : " hours ago",
+    "time_onedayago"            : "1 day ago",
+    "time_daysago"              : " days ago"
+}

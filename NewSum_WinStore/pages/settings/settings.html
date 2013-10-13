@@ -11,10 +11,10 @@
     <div id="settings"  data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'settings', width:'narrow'}">
         <div class="win-ui-dark win-header">
             <button type="button" id="close-settings"  class="win-backbutton"></button>
-            <div class="win-label">Settings</div>
+            <div class="win-label" data-win-res="{innerText: 'appBarSettings'}" >Settings</div>
         </div>
          <div class="win-content win-settings-section">
-              <h3>Change language</h3>
+              <h3 data-win-res="{innerText: 'settings_ChangeLang'}">Change language</h3>
              <input id="en-us" type="radio" name="language" value="en-us"/><label for="en-us">English</label>
              <br />
              <input  id="el-gr" type="radio" name="language" value="el-gr"/><label for="el-gr">Greek</label>

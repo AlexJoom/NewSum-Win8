@@ -8,7 +8,7 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {            
-            
+            WinJS.Resources.processAll();
            
             this._checkForInternetConnectivity();
             var listView = element.querySelector(".itemslist").winControl;
@@ -45,8 +45,8 @@
             if (internetConnectionProfile==null || internetConnectionProfile.getNetworkConnectivityLevel() !=
                         Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess) {
 
-                var dialog = new Windows.UI.Popups.MessageDialog("Δεν είστε συνδεδεμένοι στο internet. Η εφαρμογή θα κλείσει...", "Ώπα!");
-                dialog.commands.append(new Windows.UI.Popups.UICommand("Κλείσιμο", function () {
+                var dialog = new Windows.UI.Popups.MessageDialog(WinJS.Resources.getString('internetConnectivityCheck_Title').value, WinJS.Resources.getString('internetConnectivityCheck_Subtitle').value);
+                dialog.commands.append(new Windows.UI.Popups.UICommand(WinJS.Resources.getString('internetConnectivityCheck_Close').value, function () {
                     window.close();
                 }));
                 dialog.defaultCommandIndex = 0;// Set the command that will be invoked by default
