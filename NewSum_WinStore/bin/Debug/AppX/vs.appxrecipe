@@ -6,18 +6,18 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>151AlexandrosTzoumas.NewSum</PackageIdentityName>
-    <RegisteredManifestChecksum>A5E1A9FE5D888D599D5EC424969BE0D8C1C43AEB1CAC53B04819C906B71C3798</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.7.0.7_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>E0DA4EDF8D7C2F1A56C9679D953C7DCDEDAE2C3CB05E83A227AF6DB3A8488800</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.8.0.0_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>151AlexandrosTzoumas.NewSum_nnbevzxmd4rbp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>151AlexandrosTzoumas.NewSum</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=6CDF6AF2-D198-4433-9005-70865A6BC65F</RegisteredPackagePublisher>
-    <RegisteredVersion>0.7.0.7</RegisteredVersion>
+    <RegisteredVersion>0.8.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-11-24T18:09:54.803</Modified>
+      <Modified>2013-11-24T22:04:46.273</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -317,7 +317,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-11-24T18:09:54.355</Modified>
+      <Modified>2013-11-24T22:22:22.926</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

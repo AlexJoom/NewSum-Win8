@@ -2,7 +2,7 @@
 <resources>
   <index root="\" startIndexAt="bld\Debug\layout.resfiles">
     <default>
-      <qualifier name="Language" value="el-gr" />
+      <qualifier name="Language" value="en" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="100" />
       <qualifier name="HomeRegion" value="001" />
@@ -15,7 +15,7 @@
   </index>
   <index root="\" startIndexAt="bld\Debug\resources.resfiles">
     <default>
-      <qualifier name="Language" value="el-gr" />
+      <qualifier name="Language" value="en" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="100" />
       <qualifier name="HomeRegion" value="001" />
@@ -30,7 +30,7 @@
   </index>
   <index root="\" startIndexAt="bld\Debug\pri.resfiles">
     <default>
-      <qualifier name="Language" value="el-gr" />
+      <qualifier name="Language" value="en" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="100" />
       <qualifier name="HomeRegion" value="001" />

@@ -46,7 +46,7 @@
   <PropertyGroup>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
-    <DefaultLanguage>el-gr</DefaultLanguage>
+    <DefaultLanguage>en</DefaultLanguage>
     <PackageCertificateKeyFile>NewSum_WinStore_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <PackageCertificateThumbprint>15052F49AF42B8ADF3F2EDC9B1C9FBDA56B9B71D</PackageCertificateThumbprint>
