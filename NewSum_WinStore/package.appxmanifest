@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="151AlexandrosTzoumas.NewSum" Version="0.8.0.0" Publisher="CN=6CDF6AF2-D198-4433-9005-70865A6BC65F" />
+  <Identity Name="151AlexandrosTzoumas.NewSum" Version="0.8.0.2" Publisher="CN=6CDF6AF2-D198-4433-9005-70865A6BC65F" />
   <Properties>
     <DisplayName>NewSum</DisplayName>
     <PublisherDisplayName>Alexandros Tzoumas</PublisherDisplayName>

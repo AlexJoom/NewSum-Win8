@@ -25,7 +25,7 @@
 
     "about_mainSection"         : "NewSum collects information from multiple news sources, groups the news referring to the same topic, and produces one brief summary for each of them.<br/>It's  implemented by N.G.O <a href=\"http://www.scify.org\">SciFY</a> and Institute of Informatics and Telecommuncations of <a href=\"http://www.demokritos.gr/\">N.C.S.R. Demokritos</a>.<br/>The graphical interface was implemented by <a href=\"http://gr.linkedin.com/in/atzoumas/\">Alexandros Tzoumas</a>",
     "about_sectionPrivacy"      :  "<h2>Privacy policy</h2>NewSum does not collect or use personal information from its users.",
-    "about_sectionPhotos"       :  "The category image's used in the app can be found in the following links:",
+    "about_sectionPhotos"       :  "The categories images used in the app can be found in the following links:",
 
     "new_single"                :"new",
     "new_plural"                :"new",

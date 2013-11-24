@@ -6,18 +6,18 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>151AlexandrosTzoumas.NewSum</PackageIdentityName>
-    <RegisteredManifestChecksum>E0DA4EDF8D7C2F1A56C9679D953C7DCDEDAE2C3CB05E83A227AF6DB3A8488800</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.8.0.0_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>ED1124C2C3E263886B22B4CF99A8218F39484FEF772B5084B538A8BA1B6676C8</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>151AlexandrosTzoumas.NewSum_0.8.0.2_neutral__nnbevzxmd4rbp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>151AlexandrosTzoumas.NewSum_nnbevzxmd4rbp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>151AlexandrosTzoumas.NewSum</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=6CDF6AF2-D198-4433-9005-70865A6BC65F</RegisteredPackagePublisher>
-    <RegisteredVersion>0.8.0.0</RegisteredVersion>
+    <RegisteredVersion>0.8.0.2</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-11-24T22:04:46.273</Modified>
+      <Modified>2013-11-24T22:49:42.364</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -249,7 +249,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-11-24T18:59:03.125</Modified>
+      <Modified>2013-11-24T22:49:41.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -317,7 +317,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-11-24T22:22:22.926</Modified>
+      <Modified>2013-11-24T22:49:42.231</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

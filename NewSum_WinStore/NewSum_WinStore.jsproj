@@ -50,6 +50,7 @@
     <PackageCertificateKeyFile>NewSum_WinStore_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <PackageCertificateThumbprint>15052F49AF42B8ADF3F2EDC9B1C9FBDA56B9B71D</PackageCertificateThumbprint>
+    <AppxPackageDir>C:\Users\Alexandros\Desktop\New folder\</AppxPackageDir>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -105,6 +106,7 @@
     <Content Include="js\navigator.js" />
     <None Include="Package.StoreAssociation.xml" />
     <None Include="NewSum_WinStore_StoreKey.pfx" />
+    <Content Include="LICENSE.md" />
     <Content Include="packages.config" />
     <Content Include="pages\about\about.css" />
     <Content Include="pages\about\about.html" />
