@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="NewSum | Your daily glimpse to reality" Logo="images\logos\logo\150.fw.png" SmallLogo="images\logos\small\30.png" Description="NewSum collects information from multiple news sources, groups the news referring to the same topic, and produces one brief summary for each of them. It's a result of the cooperation between N.G.O SciFY (http://www.scify.org) and N.C.S.R. Demokritos (http://www.demokritos.gr). The graphical interface was implemented by Alexandros Tzoumas (http://gr.linkedin.com/in/atzoumas/)" ForegroundText="dark" BackgroundColor="transparent" ToastCapable="false">
+      <VisualElements DisplayName="NewSum | Your daily glimpse to reality" Logo="images\logos\logo\150.fw.png" SmallLogo="images\logos\small\30.png" Description="NewSum is an application that automatically summarizes information from many sources and combines them in a single text.With the use of cutting-edge artificial intelligence technology, it searches for the latest news in selected news sources, classifies texts which refer to the very same piece of information, and presents an overview of its main points.It's a result of the cooperation between N.G.O SciFY (http://www.scify.org) and N.C.S.R. Demokritos (http://www.demokritos.gr). The graphical interface was implemented by Alexandros Tzoumas (http://gr.linkedin.com/in/atzoumas/)" ForegroundText="dark" BackgroundColor="transparent" ToastCapable="false">
         <DefaultTile ShowName="allLogos" ShortName="NewSum" WideLogo="images\logos\wide\310x150.png" />
         <SplashScreen Image="images\logos\splashscreen\620x300.png" BackgroundColor="white" />
         <InitialRotationPreference>
