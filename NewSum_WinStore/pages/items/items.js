@@ -3,21 +3,19 @@
 
     var appViewState = Windows.UI.ViewManagement.ApplicationViewState;
     var ui = WinJS.UI;
+    var tempElement; //TO DO: not sure if this is valid;
 
     ui.Pages.define("/pages/items/items.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
-        ready: function (element, options) {            
+        ready: function (element, options) {
             WinJS.Resources.processAll();
-           
-            this._checkForInternetConnectivity();
-            var listView = element.querySelector(".itemslist").winControl;
-            listView.itemDataSource = NewSum.categories.dataSource;
-            listView.itemTemplate = element.querySelector(".itemtemplate");
-            listView.oniteminvoked = this._itemInvoked.bind(this);
 
-            this._initializeLayout(listView, Windows.UI.ViewManagement.ApplicationView.value);
-            listView.element.focus();
+            tempElement = element;
+            this._bindCategoriesToUi.call(this);
+            this._checkForInternetConnectivity();
+            
+          
         },
 
         // This function updates the page layout in response to viewState changes (ex. you rotate the device)
@@ -42,7 +40,7 @@
         },
         _checkForInternetConnectivity: function () {
             var internetConnectionProfile = Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile();
-            if (internetConnectionProfile==null || internetConnectionProfile.getNetworkConnectivityLevel() !=
+            if (internetConnectionProfile == null || internetConnectionProfile.getNetworkConnectivityLevel() !=
                         Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess) {
 
                 var dialog = new Windows.UI.Popups.MessageDialog(WinJS.Resources.getString('internetConnectivityCheck_Title').value, WinJS.Resources.getString('internetConnectivityCheck_Subtitle').value);
@@ -52,10 +50,17 @@
                 dialog.defaultCommandIndex = 0;// Set the command that will be invoked by default
                 dialog.cancelCommandIndex = 0;// Set the command to be invoked when escape is pressed
                 dialog.showAsync();
-
             }
         },
-            // This function updates the ListView with new layouts
+        _bindCategoriesToUi: function () {
+
+            var listView = tempElement.querySelector(".itemslist").winControl;
+            listView.itemDataSource = NewSum.categories.dataSource;
+            listView.itemTemplate = tempElement.querySelector(".itemtemplate");
+            listView.oniteminvoked = this._itemInvoked.bind(this);
+            this._initializeLayout(listView, Windows.UI.ViewManagement.ApplicationView.value);
+            listView.element.focus();
+        },
         _initializeLayout: function (listView, viewState) {
             /// <param name="listView" value="WinJS.UI.ListView.prototype" />
             if (viewState === appViewState.snapped) {
@@ -66,7 +71,7 @@
         },
         _itemInvoked: function (args) {
             var categorySelected = NewSum.categories.getAt(args.detail.itemIndex);
-            WinJS.Navigation.navigate("/pages/split/split.html",{ categorySelected: categorySelected });// { groupKey: groupKey });
+            WinJS.Navigation.navigate("/pages/split/split.html", { categorySelected: categorySelected });// { groupKey: groupKey });
         }
     });
 })();

@@ -35,5 +35,8 @@
     "time_onehourago"           : "1 hour ago",
     "time_hoursago"             : " hours ago",
     "time_onedayago"            : "1 day ago",
-    "time_daysago"              : " days ago"
+    "time_daysago"              : " days ago",
+
+	"source_single"				: "πηγή",
+	"source_plural"				: "πηγές"
 }

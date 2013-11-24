@@ -35,5 +35,8 @@
     "time_onehourago"           : "πριν 1 ώρα",
     "time_hoursago"             : " ώρες πριν",
     "time_onedayago"            : "πριν 1 μέρα",
-    "time_daysago"              : " μέρες πριν"
+    "time_daysago"              : " μέρες πριν",
+
+	"source_single"				: "πηγή",
+	"source_plural"				: "πηγές"
 }

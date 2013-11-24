@@ -1,1 +1,1 @@
-C:\Users\Alx\Documents\GitHub\NewSum-Win8\NewSum_WinStore\NewSum_WinStore.jsproj;neutral
+C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\NewSum_WinStore.jsproj;neutral

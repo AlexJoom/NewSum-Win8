@@ -38,17 +38,24 @@
                 }
 
             .splitpage .itemlistsection .itemlist .item {
-                -ms-grid-columns: 32px 1fr;
+                -ms-grid-columns: 60px 1fr;
                 -ms-grid-rows: 1fr;
                 display: -ms-grid;
-                height: 50px;
+                height: 60px;
                 width: 500px;
             }
 
-                .splitpage .itemlistsection .itemlist .item .item-image {
-                    height: 32px;
+                .splitpage .itemlistsection .itemlist .item .item-counter {
+                    height: 55px;
+					width:55px;
+					line-height:55px;
+					border:1px solid lightgray;
+					text-align:center;
                 }
-
+				.splitpage .itemlistsection .itemlist .win-selected  .item .item-counter
+				{
+					color:black;
+				}
                 .splitpage .itemlistsection .itemlist .item .item-info {
                     -ms-grid-column: 2;
                     margin-left: 10px;
@@ -57,7 +64,7 @@
                 }
 
                     .splitpage .itemlistsection .itemlist .item .item-info .item-title {
-                        margin-top: -3px;
+                        margin-top: 0;
                         padding: 0;
                     }
 

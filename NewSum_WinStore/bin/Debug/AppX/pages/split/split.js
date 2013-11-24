@@ -17,20 +17,20 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
+            var instance = this;
+        
+            
             WinJS.Resources.processAll();
             var listView = element.querySelector(".itemlist").winControl;
 
-            var instance = this;
+           
             // Store information about the group and selection that this page will display.
             if (options.groupKey) {
                 options.categorySelected = { key: options.groupKey, title: options.groupKey };
             }
-
-            instance._group = options.categorySelected; //(options && options.groupKey) ? Data.resolveGroupReference(options.groupKey) : Data.groups.getAt(0);
+            instance._group = options.categorySelected;
             element.querySelector("header[role=banner] .pagetitle").textContent = instance._group.title;
-            
-            instance._items = NewSum.groups[options.categorySelected.key].bindingList; //Data.getItemsFromGroup(this._group);
-
+            instance._items = NewSum.groups[options.categorySelected.key].bindingList;
             listView.itemDataSource = this._items.dataSource;
             listView.itemTemplate = element.querySelector(".itemtemplate");
             listView.onselectionchanged = this._selectionChanged.bind(this);
@@ -53,10 +53,7 @@
                 // appear in the ListView.
                 listView.selection.set(Math.max(this._itemSelectionIndex, 0));
             }
-
             NewSum.FetchOlderArticles(options.categorySelected.key);
-
-           
         },
 
         unload: function () {

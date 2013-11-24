@@ -39,13 +39,13 @@
     <Capability Name="internetClient" />
   </Capabilities>
   <Dependencies>
-    <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20789" />
+    <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20512" />
   </Dependencies>
   <build:Metadata>
-    <build:Item Name="VisualStudio" Version="11.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2012" />
-    <build:Item Name="OperatingSystem" Version="6.2.9200.16384 (win8_rtm.120725-1247)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="11.0.60610.1" />
-    <build:Item Name="MakePri.exe" Version="6.2.9200.16384 (win8_rtm.120725-1247)" />
+    <build:Item Name="VisualStudio" Version="12.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Premium 2013" />
+    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.21005.1" />
+    <build:Item Name="MakePri.exe" Version="6.2.9200.20789 (win8_ldr.130802-1617)" />
   </build:Metadata>
 </Package>

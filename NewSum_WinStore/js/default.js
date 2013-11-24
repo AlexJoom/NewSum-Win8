@@ -30,37 +30,10 @@
                     return nav.navigate(Application.navigator.home);
                 }
             }));
-
-
-            var appbar = document.getElementById("appbar").winControl;
-            appbar.commands = [{
-                id: 'cmdAbout',
-                label: WinJS.Resources.getString('appbarAbout').value,
-                icon: 'people',
-                section: 'global',
-                type: 'button',
-                tooltip: ""
-            },
-            {
-                id: 'cmdSettings',
-                label: WinJS.Resources.getString('appBarSettings').value,
-                icon: 'settings',
-                section: 'global',
-                tooltip: ""
-            }];
-
-
-
-
-            document.getElementById("cmdAbout").addEventListener("click", function () {
-                nav.navigate("/pages/about/about.html");
-            });
-
-            document.getElementById("cmdSettings").addEventListener("click", function () {
-                WinJS.UI.SettingsFlyout.showSettings("settings", "/pages/settings/settings.html");
-
-            });
-
+            
+            initiateAppBar();
+            WinJS.Application.addEventListener("languageChanged", RefreshCategories);
+            
         }
     });
 
@@ -71,7 +44,6 @@
         // suspended, call args.setPromise().
         app.sessionState.history = nav.history;
     };
-
     app.onloaded = function () { //process all resource files
         WinJS.Resources.processAll();
     };
@@ -82,10 +54,40 @@
         };
         WinJS.UI.SettingsFlyout.populateSettings(e);
     };
-
-    app.addEventListener("resuming", function () {
-
-
-    });
+    app.addEventListener("resuming", function () {});
     app.start();
+    
+
+    function initiateAppBar() {
+        var appbar = document.getElementById("appbar").winControl;
+        appbar.commands = [{
+            id: 'cmdAbout',
+            label: WinJS.Resources.getString('appbarAbout').value,
+            icon: 'people',
+            section: 'global',
+            type: 'button',
+            tooltip: ""
+        },
+        {
+            id: 'cmdSettings',
+            label: WinJS.Resources.getString('appBarSettings').value,
+            icon: 'settings',
+            section: 'global',
+            tooltip: ""
+        }];
+
+        document.getElementById("cmdAbout").addEventListener("click", function () {
+            nav.navigate("/pages/about/about.html");
+        });
+        document.getElementById("cmdSettings").addEventListener("click", function () {
+            WinJS.UI.SettingsFlyout.showSettings("settings", "/pages/settings/settings.html");
+        });
+    }
+    function RefreshCategories() {
+        NewSum.CreateCategories();
+        NewSum.FetchLatestNewsForAllCategories();
+        nav.navigate(Application.navigator.home);
+    }
+
+    
 })();
