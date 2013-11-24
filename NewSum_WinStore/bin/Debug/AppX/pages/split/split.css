@@ -52,8 +52,23 @@
                     text-align: center;
                 }
 
-            
+            .item-counter.counter-1 {
+                background-color: white;
+                color: black;
+            }
 
+            .item-counter.counter-2 {
+                background-color: white;
+                color: black;
+            }
+            .item-counter.counter-3 {
+                background-color: white;
+                color: black;
+            }
+            .item-counter.counter-many {
+                background-color: yellow;
+                color: black;
+            }
             .splitpage .itemlistsection .itemlist .item .item-counter span {
                 display: block;
                 width: 100%;

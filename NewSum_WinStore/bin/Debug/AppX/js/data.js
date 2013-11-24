@@ -76,11 +76,13 @@
     };
 
     NewSum.FetchLatestNewsForAllCategories = function () {
+
+        WinJS.Application.queueEvent({ type: "fetchingLatestNews" });
+        
         WinJS.xhr({
             url: "https://api.mongolab.com/api/1/databases/newsum/collections/" + getCollectionNameForLatestNews() + "?apiKey=bD52OMB9YRbyUoRgbwIgv94zMD1BOTco"
         }).done(function (response) {
             var latest = JSON.parse(response.responseText);
-
 
             NewSum.categories.forEach(function (item, index) {
                 var ctx = Enumerable.From(latest).FirstOrDefault(null, function (i) {
@@ -100,6 +102,11 @@
                 }
 
             });
+            NewSum.categoriesBuildSuccesfully = true;
+            WinJS.Application.queueEvent({ type: "fetchedLatestNews" });
+        }, function () {
+            WinJS.Application.queueEvent({ type: "fetchedLatestNews" });
+          
         });
     };
     NewSum.FetchOlderArticles = function (categoryName, loadingCallBack, FinishedCallback) {
@@ -168,18 +175,8 @@
             }
             return content;
         },
-        getSourcesBackGroundColor = function (count) {
-
-            switch (count) {
-                case 1:
-                    return "white;";
-                case 2:
-                    return "yellow;";
-                case 3:
-                    return "red;";
-                default:
-                    return "orange;";
-            }
+        getSourcesClass = function (count) {
+            return "item-counter counter-" + (count <= 3 ? count : "many");
         },
         getArticleSources = function (a) {
             var sources = [];
@@ -202,7 +199,7 @@
                 content: getSummaryText(a),
                 sourcesCount: a.Sources.length,
                 sourcesCountToolTip: (a.Sources.length == 1 ? WinJS.Resources.getString('source_single').value : WinJS.Resources.getString('source_plural').value),
-                sourcesBackGroundColor: getSourcesBackGroundColor(a.Sources.length),
+                sourcesClass: getSourcesClass(a.Sources.length),
                 backgroundImage: "",
                 articleSources: getArticleSources(a)
             };

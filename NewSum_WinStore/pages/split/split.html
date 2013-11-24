@@ -18,7 +18,7 @@
     <!-- This template is used to display each item in the ListView declared below. -->
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <div class="item">
-            <div class="item-counter" data-win-bind="style.background: sourcesBackGroundColor">
+            <div class="item-counter" data-win-bind="className:sourcesClass">
                 <span data-win-bind="textContent: sourcesCount"></span>
                 <span data-win-bind="textContent: sourcesCountToolTip"></span>
             </div>
@@ -38,13 +38,14 @@
             <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
             <h1 class="titlearea win-type-ellipsis">
                 <span class="pagetitle"></span>
+                <progress class="hidden"></progress>
             </h1>
         </header>
         <div class="itemlistsection" aria-label="List column">
             <div class="itemlist win-selectionstylefilled"
-                aria-label="List of this group's items"
-                data-win-control="WinJS.UI.ListView"
-                data-win-options="{ selectionMode: 'single', swipeBehavior: 'none', tapBehavior: 'toggleSelect' }">
+                 aria-label="List of this group's items"
+                 data-win-control="WinJS.UI.ListView"
+                 data-win-options="{ selectionMode: 'single', swipeBehavior: 'none', tapBehavior: 'toggleSelect' }">
             </div>
         </div>
 
@@ -60,7 +61,7 @@
                 <div class="article-content" data-win-bind="innerHTML: content"></div>
 
                 <div class="article-sources">
-                   <span data-win-res="{innerText: 'split_Sources'}">Πηγές:</span>  
+                    <span data-win-res="{innerText: 'split_Sources'}">Πηγές:</span>
                     <span data-win-bind="innerHTML: articleSources"></span>
                 </div>
                 <div>

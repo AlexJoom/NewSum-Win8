@@ -9,7 +9,7 @@
 
     ui.Pages.define("/pages/split/split.html", {
 
-        
+
         //_items: null,
         _group: null,
         _itemSelectionIndex: -1,
@@ -18,12 +18,15 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             var instance = this;
-        
-            
+
             WinJS.Resources.processAll();
+
+          
+
             var listView = element.querySelector(".itemlist").winControl;
 
-           
+
+
             // Store information about the group and selection that this page will display.
             if (options.groupKey) {
                 options.categorySelected = { key: options.groupKey, title: options.groupKey };
@@ -130,13 +133,13 @@
                     if (this._isSingleColumn()) {
                         // If snapped or portrait, navigate to a new page containing the
                         // selected item's details.
-                        
+
                         nav.navigate("/pages/split/split.html", { categorySelected: this._group, selectedIndex: this._itemSelectionIndex });
                     } else {
                         // If fullscreen or filled, update the details column with new data.
                         details = document.querySelector(".articlesection");
                         binding.processAll(details, items[0].data);
-                        details.scrollTop = 0;           
+                        details.scrollTop = 0;
                     }
                 }
             }.bind(this));

@@ -12,8 +12,17 @@
             WinJS.Resources.processAll();
 
             tempElement = element;
-            this._bindCategoriesToUi.call(this);
-            this._checkForInternetConnectivity();
+            
+            if (this._checkForInternetConnectivity()) {
+                this._bindCategoriesToUi.call(this);
+
+                WinJS.Application.addEventListener("fetchedLatestNews", function () {
+                    WinJS.Utilities.addClass(document.getElementsByTagName("progress")[0], "hidden");
+                });
+                
+                if (NewSum.categoriesBuildSuccesfully)
+                    WinJS.Utilities.addClass(document.getElementsByTagName("progress")[0], "hidden");
+            }
             
           
         },
@@ -50,10 +59,12 @@
                 dialog.defaultCommandIndex = 0;// Set the command that will be invoked by default
                 dialog.cancelCommandIndex = 0;// Set the command to be invoked when escape is pressed
                 dialog.showAsync();
+                WinJS.Utilities.addClass(document.getElementsByTagName("progress")[0], "hidden");
+                return false;
             }
+            return true;
         },
         _bindCategoriesToUi: function () {
-
             var listView = tempElement.querySelector(".itemslist").winControl;
             listView.itemDataSource = NewSum.categories.dataSource;
             listView.itemTemplate = tempElement.querySelector(".itemtemplate");
