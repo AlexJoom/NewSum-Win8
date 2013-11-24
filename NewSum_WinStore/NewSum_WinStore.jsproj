@@ -58,9 +58,12 @@
     <Content Include="css\default.css" />
     <Content Include="images\3499502280_a1a8ce4474_q.jpg" />
     <Content Include="images\3591481091_6f63ecfd4e_q.jpg" />
+    <Content Include="images\topnews.jpg" />
     <Content Include="images\6355360253_30e095425d_n.jpg" />
     <Content Include="images\basketball_middle.jpg" />
+    <Content Include="images\business.jpg" />
     <Content Include="images\earth.png" />
+    <Content Include="images\europe.png" />
     <Content Include="images\logos\badge\24.scale-100.png" />
     <Content Include="images\logos\badge\24.scale-140.png" />
     <Content Include="images\logos\badge\24.scale-180.png" />
@@ -96,6 +99,7 @@
     <Content Include="images\Patan_Nepal-Culture_of_Nepal.jpg" />
     <Content Include="images\petri-dishes_w725_h498.jpg" />
     <Content Include="images\smalllogo.png" />
+    <Content Include="images\technology.jpg" />
     <Content Include="js\data.js" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />

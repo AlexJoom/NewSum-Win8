@@ -18,8 +18,10 @@
     <!-- This template is used to display each item in the ListView declared below. -->
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <div class="item">
-			<div class="item-counter" data-win-bind="textContent: sourcesCount; title: sourcesCountToolTip; style.background: sourcesBackGroundColor">
-			</div>
+            <div class="item-counter" data-win-bind="style.background: sourcesBackGroundColor">
+                <span data-win-bind="textContent: sourcesCount"></span>
+                <span data-win-bind="textContent: sourcesCountToolTip"></span>
+            </div>
             <div class="item-info">
                 <h3 class="item-title">
                     <span class="title" data-win-bind="textContent: title"></span>

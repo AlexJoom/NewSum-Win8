@@ -38,11 +38,17 @@
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\3591481091_6f63ecfd4e_q.jpg">
       <PackagePath>images\3591481091_6f63ecfd4e_q.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\topnews.jpg">
+      <PackagePath>images\topnews.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\6355360253_30e095425d_n.jpg">
       <PackagePath>images\6355360253_30e095425d_n.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\basketball_middle.jpg">
       <PackagePath>images\basketball_middle.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\business.jpg">
+      <PackagePath>images\business.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logoTemp.jpg">
       <PackagePath>images\logoTemp.jpg</PackagePath>
@@ -59,8 +65,14 @@
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\petri-dishes_w725_h498.jpg">
       <PackagePath>images\petri-dishes_w725_h498.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\technology.jpg">
+      <PackagePath>images\technology.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\earth.png">
       <PackagePath>images\earth.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\europe.png">
+      <PackagePath>images\europe.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\badge\24.scale-100.png">
       <PackagePath>images\logos\badge\24.scale-100.png</PackagePath>

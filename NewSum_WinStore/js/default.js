@@ -54,7 +54,9 @@
         };
         WinJS.UI.SettingsFlyout.populateSettings(e);
     };
-    app.addEventListener("resuming", function () {});
+    app.addEventListener("resuming", function () {
+       // RefreshCategories();
+    });
     app.start();
     
 

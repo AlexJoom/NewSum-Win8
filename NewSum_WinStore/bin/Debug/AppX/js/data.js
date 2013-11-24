@@ -9,37 +9,35 @@
         EN: "en-us"
     };
 
-
     //the category photos
     var greece = "../../images/Parthenon_night_view.jpg";
     var athletics = "../../images/basketball_middle.jpg";
     var culture = "../../images/Patan_Nepal-Culture_of_Nepal.jpg";
     var world = "../../images/earth.png";
-    var tech = "../../images/petri-dishes_w725_h498.jpg";
+    var science = "../../images/petri-dishes_w725_h498.jpg";
     var various = "../../images/3591481091_6f63ecfd4e_q.jpg";
     var money = "../../images/6355360253_30e095425d_n.jpg";
-
-    // These three strings encode placeholder images. You will want to set the
-    // backgroundImage property in your real data to be URLs to images.
-    var lightGray = "../../images/logos/small/30.scale-100.png";
-
+    var europe = "../../images/europe.png";
+    var technology = "../../images/technology.jpg";
+    var topNews = "../../images/topnews.jpg";
+    var business = "../../images/business.jpg";
 
     var categories = [
         { lang: NewSum.Constants.Languages.GR, key: "Κόσμος", title: "Κόσμος", subtitle: "...", backgroundImage: world },
         { lang: NewSum.Constants.Languages.GR, key: "Ελλάδα", title: "Ελλάδα", subtitle: "...", backgroundImage: greece },
         { lang: NewSum.Constants.Languages.GR, key: "Αθλητισμός", title: "Αθλητισμός", subtitle: "...", backgroundImage: athletics },
         { lang: NewSum.Constants.Languages.GR, key: "Πολιτισμός", title: "Πολιτισμός", subtitle: "...", backgroundImage: culture },
-        { lang: NewSum.Constants.Languages.GR, key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", backgroundImage: tech },
+        { lang: NewSum.Constants.Languages.GR, key: "Επιστήμη", title: "Επιστήμη", subtitle: "...", backgroundImage: science },
         { lang: NewSum.Constants.Languages.GR, key: "Οικονομία", title: "Οικονομία", subtitle: "...", backgroundImage: money },
         { lang: NewSum.Constants.Languages.GR, key: "Γενικά", title: "Γενικά", subtitle: "...", backgroundImage: various },
-        { lang: NewSum.Constants.Languages.GR, key: "Τεχνολογία", title: "Τεχνολογία", subtitle: "...", backgroundImage: lightGray },
+        { lang: NewSum.Constants.Languages.GR, key: "Τεχνολογία", title: "Τεχνολογία", subtitle: "...", backgroundImage: technology },
 
+        { lang: NewSum.Constants.Languages.EN, key: "Top News", title: "Top News", subtitle: "...", backgroundImage: topNews },
+        { lang: NewSum.Constants.Languages.EN, key: "Business", title: "Business", subtitle: "...", backgroundImage: business },
+        { lang: NewSum.Constants.Languages.EN, key: "Technology", title: "Technology", subtitle: "...", backgroundImage: technology },
+        { lang: NewSum.Constants.Languages.EN, key: "Science", title: "Science", subtitle: "...", backgroundImage: science },
         { lang: NewSum.Constants.Languages.EN, key: "World", title: "World", subtitle: "...", backgroundImage: world },
-        { lang: NewSum.Constants.Languages.EN, key: "Science", title: "Science", subtitle: "...", backgroundImage: tech },
-        { lang: NewSum.Constants.Languages.EN, key: "Top News", title: "Top News", subtitle: "...", backgroundImage: lightGray },
-        { lang: NewSum.Constants.Languages.EN, key: "Europe", title: "Europe", subtitle: "...", backgroundImage: lightGray },
-        { lang: NewSum.Constants.Languages.EN, key: "Technology", title: "Technology", subtitle: "...", backgroundImage: lightGray },
-        { lang: NewSum.Constants.Languages.EN, key: "Business", title: "Business", subtitle: "...", backgroundImage: lightGray },
+        { lang: NewSum.Constants.Languages.EN, key: "Europe", title: "Europe", subtitle: "...", backgroundImage: europe }
         //{ lang: NewSum.Constants.Languages.EN, key: "SciFY News", title: "SciFY News", subtitle: "...", backgroundImage: lightGray }
     ];
 
@@ -203,9 +201,9 @@
                 description: "",
                 content: getSummaryText(a),
                 sourcesCount: a.Sources.length,
-                sourcesCountToolTip: a.Sources.length + " " + (a.Sources.length == 1 ? WinJS.Resources.getString('source_single').value : WinJS.Resources.getString('source_plural').value),
+                sourcesCountToolTip: (a.Sources.length == 1 ? WinJS.Resources.getString('source_single').value : WinJS.Resources.getString('source_plural').value),
                 sourcesBackGroundColor: getSourcesBackGroundColor(a.Sources.length),
-                backgroundImage: lightGray,
+                backgroundImage: "",
                 articleSources: getArticleSources(a)
             };
         };

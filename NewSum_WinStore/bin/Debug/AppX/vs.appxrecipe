@@ -17,7 +17,7 @@
     <AppXManifest Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-11-17T22:31:03.661</Modified>
+      <Modified>2013-11-24T18:09:54.803</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,7 +43,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
-      <Modified>2013-11-17T23:40:42.394</Modified>
+      <Modified>2013-11-24T18:29:34.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\3499502280_a1a8ce4474_q.jpg">
       <PackagePath>images\3499502280_a1a8ce4474_q.jpg</PackagePath>
@@ -53,6 +53,10 @@
       <PackagePath>images\3591481091_6f63ecfd4e_q.jpg</PackagePath>
       <Modified>2013-10-20T23:13:00.851</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\topnews.jpg">
+      <PackagePath>images\topnews.jpg</PackagePath>
+      <Modified>2013-11-24T18:09:25.753</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\6355360253_30e095425d_n.jpg">
       <PackagePath>images\6355360253_30e095425d_n.jpg</PackagePath>
       <Modified>2013-10-20T23:13:00.856</Modified>
@@ -60,6 +64,10 @@
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\basketball_middle.jpg">
       <PackagePath>images\basketball_middle.jpg</PackagePath>
       <Modified>2013-10-20T23:13:00.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\business.jpg">
+      <PackagePath>images\business.jpg</PackagePath>
+      <Modified>2013-11-24T18:04:15.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logoTemp.jpg">
       <PackagePath>images\logoTemp.jpg</PackagePath>
@@ -81,9 +89,17 @@
       <PackagePath>images\petri-dishes_w725_h498.jpg</PackagePath>
       <Modified>2013-10-20T23:13:00.974</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\technology.jpg">
+      <PackagePath>images\technology.jpg</PackagePath>
+      <Modified>2013-11-24T18:06:59.324</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\earth.png">
       <PackagePath>images\earth.png</PackagePath>
       <Modified>2013-10-20T23:13:00.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\europe.png">
+      <PackagePath>images\europe.png</PackagePath>
+      <Modified>2013-11-24T17:51:34.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\logos\badge\24.scale-100.png">
       <PackagePath>images\logos\badge\24.scale-100.png</PackagePath>
@@ -229,11 +245,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-11-24T15:13:30.624</Modified>
+      <Modified>2013-11-24T18:18:05.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-11-24T15:04:48.258</Modified>
+      <Modified>2013-11-24T18:15:12.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -277,11 +293,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\about\about.html">
       <PackagePath>pages\about\about.html</PackagePath>
-      <Modified>2013-10-20T23:13:01.009</Modified>
+      <Modified>2013-11-24T18:09:08.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
-      <Modified>2013-11-24T15:00:51.678</Modified>
+      <Modified>2013-11-24T18:16:02.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\privacyPolicy\privacypolicy.html">
       <PackagePath>pages\privacyPolicy\privacypolicy.html</PackagePath>
@@ -293,7 +309,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
-      <Modified>2013-11-17T23:34:53.303</Modified>
+      <Modified>2013-11-24T18:18:36.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\default.html">
       <PackagePath>default.html</PackagePath>
@@ -301,7 +317,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-11-17T23:39:10.795</Modified>
+      <Modified>2013-11-24T18:09:54.355</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
