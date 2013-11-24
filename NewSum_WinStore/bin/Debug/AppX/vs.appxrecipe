@@ -43,7 +43,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
-      <Modified>2013-11-24T18:51:32.834</Modified>
+      <Modified>2013-11-24T19:30:07.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\images\3499502280_a1a8ce4474_q.jpg">
       <PackagePath>images\3499502280_a1a8ce4474_q.jpg</PackagePath>
