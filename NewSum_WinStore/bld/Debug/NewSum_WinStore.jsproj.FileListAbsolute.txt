@@ -43,3 +43,18 @@ C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\quali
 C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\qualifiers.txt.intermediate
 C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Alexandros\Documents\GitHub\NewSum-Win8\NewSum_WinStore\bld\Debug\ProjectArchitectures.txt
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bin\Debug\resources.pri
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bin\Debug\AppxManifest.xml
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bin\Debug\NewSum_WinStore.build.appxrecipe
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\priconfig.xml
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\priconfig.xml.intermediate
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\layout.resfiles
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\layout.resfiles.intermediate
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\resources.resfiles
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\resources.resfiles.intermediate
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\pri.resfiles
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\pri.resfiles.intermediate
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\qualifiers.txt
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\qualifiers.txt.intermediate
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ALX\Documents\Visual Studio 2013\Projects\NewSumWinStore\NewSum-Win8\NewSum_WinStore\bld\Debug\ProjectArchitectures.txt
